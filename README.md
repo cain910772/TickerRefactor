@@ -1,18 +1,4 @@
-Skip to content
- 
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- @cain910772 Sign out
-0
-0 0 cain910772/TickerRefactor
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-TickerRefactor/README.md
-d4f8376  3 days ago
-@cain910772 cain910772 Update README.md
      
 23 lines (10 sloc)  1.96 KB
 				Arbitrage
@@ -21,7 +7,7 @@ My midstone solves an issue that I have with trading cryptocurrencies. There are
 App will be built using React, React Bootstrap, React Dom, React Router and other packages that I may find and list at a later time. App will use the Coin Market Cap and Cryptocompare Api’s The Apps MVP will consist of the ability of the user to login, view data on any coin of their choice on an exchange of their choice and select individual assets to follow base on their portfolio.
 
 The project will be based on the following ERD:
-<div><img id="x" src="C:\Users\Administrator\ticker3\src\Components\pics\new erd.PNG"></div>
+<div><img id="x" src="./Components/pics/new erd.PNG"></div>
 
 Stretch Goals:
 
