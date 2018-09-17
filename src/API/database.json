@@ -1,1193 +1,964 @@
 {
-    "users":[
-        {
-            "userId":1,
-            "email":"Will@will.com",
-            "password":2226684
-        }
-        
-    ],
-    
-    "allcoins":[
-{
-  
-        "id": 1,
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "website_slug": "bitcoin",
-        "rank": 1,
-        "circulating_supply": 17265737.0,
-        "total_supply": 17265737.0,
-        "max_supply": 21000000.0,
-        "img": "data:image/png;base64,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"
-       
-          },
-          {
-        
-       "id": 2,
-        "name": "Litecoin",
-        "symbol": "LTC",
-        "website_slug": "litecoin",
-        "rank": 7,
-        "circulating_supply": 58273731.0,
-        "total_supply": 58273731.0,
-        "max_supply": 84000000.0
-        
-        },
-{
-        "id": 52,
-        "name": "XRP",
-        "symbol": "XRP",
-        "website_slug": "ripple",
-        "rank": 3,
-        "circulating_supply": 39712852387.0,
-        "total_supply": 99991847422.0,
-        "max_supply": 100000000000.0
-      
-},
-   
-     {   "id": 66,
-        "name": "Nxt",
-        "symbol": "NXT",
-        "website_slug": "nxt",
-        "rank": 85,
-        "circulating_supply": 998999942.0,
-        "total_supply": 998999942.0,
-        "max_supply": 1000000000.0
-       
-          },
-   
-      {  "id": 74,
-        "name": "Dogecoin",
-        "symbol": "DOGE",
-        "website_slug": "dogecoin",
-        "rank": 20,
-        "circulating_supply": 116128142230.0,
-        "total_supply": 116128142230.0
-      
-          },
-
-          {  "id": 109,
-        "name": "DigiByte",
-        "symbol": "DGB",
-        "website_slug": "digibyte",
-        "rank": 34,
-        "circulating_supply": 10788605784.0,
-        "total_supply": 10788605784.0,
-        "max_supply": 21000000000.0
-        
-          
-      },
-
-      {   "id": 118,
-        "name": "ReddCoin",
-        "symbol": "RDD",
-        "website_slug": "reddcoin",
-        "rank": 57,
-        "circulating_supply": 28808713174.0,
-        "total_supply": 28808713174.0
-        
-  
-      },
-  
-      {   "id": 131,
-        "name": "Dash",
-        "symbol": "DASH",
-        "website_slug": "dash",
-        "rank": 11,
-        "circulating_supply": 8318171.0,
-        "total_supply": 8318171.0,
-        "max_supply": 18900000.0
-       
-          
-  
-      },
-      { 
-        "id": 213,
-       "name": "MonaCoin",
-        "symbol": "MONA",
-        "website_slug": "monacoin",
-        "rank": 86,
-        "circulating_supply": 62241325.0,
-        "total_supply": 62241325.0
-        
-          
-        
-      },
-      { 
-        "id": 291,
-        "name": "MaidSafeCoin",
-        "symbol": "MAID",
-        "website_slug": "maidsafecoin",
-        "rank": 55,
-        "circulating_supply": 452552412.0,
-        "total_supply": 452552412.0
-      
-          
-    
-      },
-      { 
-        "id": 328,
-        "name": "Monero",
-        "symbol": "XMR",
-        "website_slug": "monero",
-        "rank": 9,
-        "circulating_supply": 16402965.0,
-        "total_supply": 16402965.0
-       
-          
-       
-      },
-      { 
-        "id": 372,
-        "name": "Bytecoin",
-        "symbol": "BCN",
-        "website_slug": "bytecoin-bcn",
-        "rank": 24,
-        "circulating_supply": 184052697322.0,
-        "total_supply": 184052697322.0,
-        "max_supply": 184470000000.0
-        
-          
-        
-      },
-      { 
-        "id": 463,
-        "name": "BitShares",
-        "symbol": "BTS",
-        "website_slug": "bitshares",
-        "rank": 32,
-        "circulating_supply": 2656510000.0,
-        "total_supply": 2656510000.0,
-        "max_supply": 3600570502.0
-      
-   
-      },
-      { 
-        "id": 467,
-        "name": "BitcoinDark",
-        "symbol": "BTCD",
-        "website_slug": "bitcoindark",
-        "rank": 74,
-        "circulating_supply": 1288862.0,
-        "total_supply": 1288862.0
-    
-     
-      },
-      { 
-        "id": 512,
-        "name": "Stellar",
-        "symbol": "XLM",
-        "website_slug": "stellar",
-        "rank": 6,
-        "circulating_supply": 18783811427.0,
-        "total_supply": 104284038362.0
-     
-          
-      },
-      { 
-        "id": 558,
-        "name": "Emercoin",
-        "symbol": "EMC",
-        "website_slug": "emercoin",
-        "rank": 92,
-        "circulating_supply": 42118422.0,
-        "total_supply": 42118422.0
-      
-          
-    
-       
-      },
-      { 
-        "id": 693,
-        "name": "Verge",
-        "symbol": "XVG",
-        "website_slug": "verge",
-        "rank": 40,
-        "circulating_supply": 15172086051.0,
-        "total_supply": 15172086051.0,
-        "max_supply": 16555000000.0
-      
-          
-   
-      },
-      { 
-        "id": 789,
-        "name": "Nexus",
-        "symbol": "NXS",
-        "website_slug": "nexus",
-        "rank": 99,
-        "circulating_supply": 58447015.0,
-        "total_supply": 58447015.0
-       
-          },
-     
-          { 
-        "id": 825,
-        "name": "Tether",
-        "symbol": "USDT",
-        "website_slug": "tether",
-        "rank": 8,
-        "circulating_supply": 2756421736.0,
-        "total_supply": 3080109502.0
-       
-         
-     
-      },
-      { 
-        "id": 873,
-        "name": "NEM",
-        "symbol": "XEM",
-        "website_slug": "nem",
-        "rank": 17,
-        "circulating_supply": 8999999999.0,
-        "total_supply": 8999999999.0
-      
-      
- 
-      },
-      { 
-        "id": 1027,
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "website_slug": "ethereum",
-        "rank": 2,
-        "circulating_supply": 101933945.0,
-        "total_supply": 101933945.0
-        
-      },
-      { 
-        "id": 1042,
-        "name": "Siacoin",
-        "symbol": "SC",
-        "website_slug": "siacoin",
-        "rank": 41,
-        "circulating_supply": 36817171515.0,
-        "total_supply": 36817171515.0
-       
-        
-      },
-      { 
-        "id": 1104,
-        "name": "Augur",
-        "symbol": "REP",
-        "website_slug": "augur",
-        "rank": 47,
-        "circulating_supply": 11000000.0,
-        "total_supply": 11000000.0
-        
-    
-      },
-      { 
-        "id": 1168,
-        "name": "Decred",
-        "symbol": "DCR",
-        "website_slug": "decred",
-        "rank": 30,
-        "circulating_supply": 8461286.0,
-        "total_supply": 8461286.0,
-        "max_supply": 21000000.0
-      
-
-      },
-      { 
-        "id": 1169,
-        "name": "PIVX",
-        "symbol": "PIVX",
-        "website_slug": "pivx",
-        "rank": 100,
-        "circulating_supply": 56781166.0,
-        "total_supply": 56781166.0
-
-      },
-      { 
-        "id": 1214,
-        "name": "Lisk",
-        "symbol": "LSK",
-        "website_slug": "lisk",
-        "rank": 23,
-        "circulating_supply": 110079306.0,
-        "total_supply": 125320572.0
-   
-       
-
-      },
-      { 
-        "id": 1229,
-        "name": "DigixDAO",
-        "symbol": "DGD",
-        "website_slug": "digixdao",
-        "rank": 79,
-        "circulating_supply": 2000000.0,
-        "total_supply": 2000000.0
-       
-      },
-      { 
-        "id": 1230,
-        "name": "Steem",
-        "symbol": "STEEM",
-        "website_slug": "steem",
-        "rank": 39,
-        "circulating_supply": 280245997.0,
-        "total_supply": 297220091.0
-        
-      
-
-      },
-      { 
-        "id": 1274,
-        "name": "Waves",
-        "symbol": "WAVES",
-        "website_slug": "waves",
-        "rank": 37,
-        "circulating_supply": 100000000.0,
-        "total_supply": 100000000.0
-        
-     
-      },
-      { 
-        "id": 1320,
-        "name": "Ardor",
-        "symbol": "ARDR",
-        "website_slug": "ardor",
-        "rank": 63,
-        "circulating_supply": 998999495.0,
-        "total_supply": 998999495.0,
-        "max_supply": 998999495.0
-    
-    
-      },
-      { 
-        "id": 1321,
-        "name": "Ethereum Classic",
-        "symbol": "ETC",
-        "website_slug": "ethereum-classic",
-        "rank": 15,
-        "circulating_supply": 104513037.0,
-        "total_supply": 104513037.0
-        
-     
-      
-      },
-      { 
-        "id": 1343,
-        "name": "Stratis",
-        "symbol": "STRAT",
-        "website_slug": "stratis",
-        "rank": 48,
-        "circulating_supply": 99012456.0,
-        "total_supply": 99012456.0
-        
-       
-      },
-      { 
-        "id": 1376,
-        "name": "NEO",
-        "symbol": "NEO",
-        "website_slug": "neo",
-        "rank": 14,
-        "circulating_supply": 65000000.0,
-        "total_supply": 100000000.0,
-        "max_supply": 100000000.0
-      
-
-      },
-      { 
-        "id": 1414,
-        "name": "ZCoin",
-        "symbol": "XZC",
-        "website_slug": "zcoin",
-        "rank": 93,
-        "circulating_supply": 5628930.0,
-        "total_supply": 5628930.0,
-        "max_supply": 21400000.0
-       
-
-      },
-      { 
-        "id": 1437,
-        "name": "Zcash",
-        "symbol": "ZEC",
-        "website_slug": "zcash",
-        "rank": 21,
-        "circulating_supply": 4789169.0,
-        "total_supply": 4789169.0
-        
-       
-
-      },
-      { 
-        "id": 1455,
-        "name": "Golem",
-        "symbol": "GNT",
-        "website_slug": "golem-network-tokens",
-        "rank": 51,
-        "circulating_supply": 959242000.0,
-        "total_supply": 1000000000.0
-        
-       
-
-      },
-      { 
-        "id": 1518,
-        "name": "Maker",
-        "symbol": "MKR",
-        "website_slug": "maker",
-        "rank": 35,
-        "circulating_supply": 728228.0,
-        "total_supply": 1000000.0
-        
-     
-  
-      },
-      { 
-        "id": 1521,
-        "name": "Komodo",
-        "symbol": "KMD",
-        "website_slug": "komodo",
-        "rank": 54,
-        "circulating_supply": 109717416.0,
-        "total_supply": 109717416.0
-        
-      
-      },
-      { 
-        "id": 1567,
-        "name": "Nano",
-        "symbol": "NANO",
-        "website_slug": "nano",
-        "rank": 28,
-        "circulating_supply": 133248289.0,
-        "total_supply": 133248289.0,
-        "max_supply": 133248290.0
-      
-      },
-      { 
-        "id": 1586,
-        "name": "Ark",
-        "symbol": "ARK",
-        "website_slug": "ark",
-        "rank": 80,
-        "circulating_supply": 105127224.0,
-        "total_supply": 136377224.0
-        
-        
-      },
-      { 
-        "id": 1684,
-        "name": "Qtum",
-        "symbol": "QTUM",
-        "website_slug": "qtum",
-        "rank": 27,
-        "circulating_supply": 88886792.0,
-        "total_supply": 100886792.0
-        
-   
-  
-      },
-      { 
-        "id": 1697,
-        "name": "Basic Attention Token",
-        "symbol": "BAT",
-        "website_slug": "basic-attention-token",
-        "rank": 46,
-        "circulating_supply": 1000000000.0,
-        "total_supply": 1500000000.0
-        
-      
-     
-      },
-      { 
-        "id": 1698,
-        "name": "Horizen",
-        "symbol": "ZEN",
-        "website_slug": "zencash",
-        "rank": 73,
-        "circulating_supply": 4709300.0,
-        "total_supply": 4709300.0,
-        "max_supply": 21000000.0
-     
-  
-      },
-      { 
-        "id": 1700,
-        "name": "Aeternity",
-        "symbol": "AE",
-        "website_slug": "aeternity",
-        "rank": 38,
-        "circulating_supply": 233020472.0,
-        "total_supply": 273685830.0
-        
-       
-       
-      },
-      { 
-        "id": 1703,
-        "name": "Metaverse ETP",
-        "symbol": "ETP",
-        "website_slug": "metaverse",
-        "rank": 44,
-        "circulating_supply": 51632344.0,
-        "total_supply": 56366477.0,
-        "max_supply": 100000000.0
-      
-   
-      },
-      { 
-        "id": 1720,
-        "name": "IOTA",
-        "symbol": "MIOTA",
-        "website_slug": "iota",
-        "rank": 12,
-        "circulating_supply": 2779530283.0,
-        "total_supply": 2779530283.0,
-        "max_supply": 2779530283.0
-      
-      },
-      { 
-        "id": 1727,
-        "name": "Bancor",
-        "symbol": "BNT",
-        "website_slug": "bancor",
-        "rank": 77,
-        "circulating_supply": 53639448.0,
-        "total_supply": 78308647.0
-        
-      
-      
-      },
-      { 
-        "id": 1750,
-        "name": "GXChain",
-        "symbol": "GXS",
-        "website_slug": "gxchain",
-        "rank": 84,
-        "circulating_supply": 60000000.0,
-        "total_supply": 100000000.0,
-        "max_supply": 100000000.0
-       
-
-      },
-      { 
-        "id": 1757,
-        "name": "FunFair",
-        "symbol": "FUN",
-        "website_slug": "funfair",
-        "rank": 82,
-        "circulating_supply": 5010848189.0,
-        "total_supply": 10999873621.0
-        
-       
-      },
-      { 
-        "id": 1758,
-        "name": "TenX",
-        "symbol": "PAY",
-        "website_slug": "tenx",
-        "rank": 78,
-        "circulating_supply": 109307861.0,
-        "total_supply": 205218256.0
-        
-    
-      },
-      { 
-        "id": 1759,
-        "name": "Status",
-        "symbol": "SNT",
-        "website_slug": "status",
-        "rank": 52,
-        "circulating_supply": 3470483788.0,
-        "total_supply": 6804870174.0
-        
-    
-       
-      },
-      { 
-        "id": 1765,
-        "name": "EOS",
-        "symbol": "EOS",
-        "website_slug": "eos",
-        "rank": 5,
-        "circulating_supply": 906245118.0,
-        "total_supply": 1006245120.0
-        
-       
-      },
-      { 
-        "id": 1776,
-        "name": "MCO",
-        "symbol": "MCO",
-        "website_slug": "mco",
-        "rank": 76,
-        "circulating_supply": 15793831.0,
-        "total_supply": 31587682.0
-        
-       
-
-      },
-      { 
-        "id": 1785,
-        "name": "Gas",
-        "symbol": "GAS",
-        "website_slug": "gas",
-        "rank": 87,
-        "circulating_supply": 10128375.0,
-        "total_supply": 17190378.0,
-        "max_supply": 100000000.0
-       
-  
-      },
-      { 
-        "id": 1789,
-        "name": "Populous",
-        "symbol": "PPT",
-        "website_slug": "populous",
-        "rank": 50,
-        "circulating_supply": 37004027.0,
-        "total_supply": 53252246.0,
-        "max_supply": 53252246.0
-       
-    
-      },
-      { 
-        "id": 1808,
-        "name": "OmiseGO",
-        "symbol": "OMG",
-        "website_slug": "omisego",
-        "rank": 22,
-        "circulating_supply": 140245398.0,
-        "total_supply": 140245398.0
-        
-       
-     
-      },
-      { 
-        "id": 1831,
-        "name": "Bitcoin Cash",
-        "symbol": "BCH",
-        "website_slug": "bitcoin-cash",
-        "rank": 4,
-        "circulating_supply": 17346188.0,
-        "total_supply": 17346188.0,
-        "max_supply": 21000000.0
-       
-    
-      },
-      { 
-        "id": 1839,
-        "name": "Binance Coin",
-        "symbol": "BNB",
-        "website_slug": "binance-coin",
-        "rank": 16,
-        "circulating_supply": 95512523.0,
-        "total_supply": 192443301.0
-        
-      
- 
-      },
-      { 
-        "id": 1866,
-        "name": "Bytom",
-        "symbol": "BTM",
-        "website_slug": "bytom",
-        "rank": 43,
-        "circulating_supply": 1002499275.0,
-        "total_supply": 1407000000.0
-        
-       
-    
-      },
-      { 
-        "id": 1876,
-        "name": "Dentacoin",
-        "symbol": "DCN",
-        "website_slug": "dentacoin",
-        "rank": 67,
-        "circulating_supply": 325226613094.0,
-        "total_supply": 1963173416169.0,
-        "max_supply": 8000000000000.0
-        
-      },
-      { 
-        "id": 1896,
-        "name": "0x",
-        "symbol": "ZRX",
-        "website_slug": "0x",
-        "rank": 31,
-        "circulating_supply": 539562647.0,
-        "total_supply": 1000000000.0
-        
-   
-    
-      },
-      { 
-        "id": 1903,
-        "name": "Hshare",
-        "symbol": "HSR",
-        "website_slug": "hshare",
-        "rank": 59,
-        "circulating_supply": 43476002.0,
-        "total_supply": 43476002.0,
-        "max_supply": 84000000.0
-       
-  
-      },
-      { 
-        "id": 1908,
-        "name": "Nebulas",
-        "symbol": "NAS",
-        "website_slug": "nebulas-token",
-        "rank": 83,
-        "circulating_supply": 45500000.0,
-        "total_supply": 100000000.0,
-        "max_supply": 100000000.0
-        
-      },
-      { 
-        "id": 1925,
-        "name": "Waltonchain",
-        "symbol": "WTC",
-        "website_slug": "waltonchain",
-        "rank": 49,
-        "circulating_supply": 40144099.0,
-        "total_supply": 70000000.0,
-        "max_supply": 100000000.0
-
-      },
-      { 
-        "id": 1934,
-        "name": "Loopring",
-        "symbol": "LRC",
-        "website_slug": "loopring",
-        "rank": 96,
-        "circulating_supply": 572074043.0,
-        "total_supply": 1374956262.0
-        
-
-       
-      },
-      { 
-        "id": 1958,
-        "name": "TRON",
-        "symbol": "TRX",
-        "website_slug": "tron",
-        "rank": 13,
-        "circulating_supply": 65748111645.0,
-        "total_supply": 99000000000.0
-        
-       
-      },
-      { 
-        "id": 1966,
-        "name": "Decentraland",
-        "symbol": "MANA",
-        "website_slug": "decentraland",
-        "rank": 81,
-        "circulating_supply": 1050141509.0,
-        "total_supply": 2644403343.0
-        
-     
-     
-      },
-      { 
-        "id": 1975,
-        "name": "Chainlink",
-        "symbol": "LINK",
-        "website_slug": "chainlink",
-        "rank": 64,
-        "circulating_supply": 350000000.0,
-        "total_supply": 1000000000.0
-        
-     
-      },
-      { 
-        "id": 2010,
-        "name": "Cardano",
-        "symbol": "ADA",
-        "website_slug": "cardano",
-        "rank": 10,
-        "circulating_supply": 25927070538.0,
-        "total_supply": 31112483745.0,
-        "max_supply": 45000000000.0
-       
-    
-      },
-      { 
-        "id": 2011,
-        "name": "Tezos",
-        "symbol": "XTZ",
-        "website_slug": "tezos",
-        "rank": 18,
-        "circulating_supply": 607489041.0,
-        "total_supply": 763306930.0
-         },
-      { 
-        "id": 2021,
-        "name": "RChain",
-        "symbol": "RHOC",
-        "website_slug": "rchain",
-        "rank": 65,
-        "circulating_supply": 380985527.0,
-        "total_supply": 870663574.0,
-        "max_supply": 1000000000.0
-    
-
-      },
-      { 
-        "id": 2027,
-        "name": "Cryptonex",
-        "symbol": "CNX",
-        "website_slug": "cryptonex",
-        "rank": 53,
-        "circulating_supply": 55456537.0,
-        "total_supply": 106905262.0,
-        "max_supply": 210000000.0
-     
-   
-      },
-      { 
-        "id": 2062,
-        "name": "Aion",
-        "symbol": "AION",
-        "website_slug": "aion",
-        "rank": 61,
-        "circulating_supply": 216811689.0,
-        "total_supply": 465934587.0
-        
-       
-      },
-      { 
-        "id": 2083,
-        "name": "Bitcoin Gold",
-        "symbol": "BTG",
-        "website_slug": "bitcoin-gold",
-        "rank": 25,
-        "circulating_supply": 17231799.0,
-        "total_supply": 17331799.0,
-        "max_supply": 21000000.0
-       
- 
-      },
-      { 
-        "id": 2087,
-        "name": "KuCoin Shares",
-        "symbol": "KCS",
-        "website_slug": "kucoin-shares",
-        "rank": 58,
-        "circulating_supply": 90730576.0,
-        "total_supply": 180730576.0
-        
-      
-        
-
-      },
-      { 
-        "id": 2099,
-        "name": "ICON",
-        "symbol": "ICX",
-        "website_slug": "icon",
-        "rank": 36,
-        "circulating_supply": 387431340.0,
-        "total_supply": 800460000.0
-        
-        
-    
-      },
-      { 
-        "id": 2132,
-        "name": "Power Ledger",
-        "symbol": "POWR",
-        "website_slug": "power-ledger",
-        "rank": 97,
-        "circulating_supply": 381304031.0,
-        "total_supply": 1000000000.0
-        
-        
-    
-      },
-      { 
-        "id": 2213,
-        "name": "QASH",
-        "symbol": "QASH",
-        "website_slug": "qash",
-        "rank": 75,
-        "circulating_supply": 350000000.0,
-        "total_supply": 1000000000.0
-        
-   
-
-      },
-      { 
-        "id": 2222,
-        "name": "Bitcoin Diamond",
-        "symbol": "BCD",
-        "website_slug": "bitcoin-diamond",
-        "rank": 29,
-        "circulating_supply": 153756875.0,
-        "total_supply": 156756875.0,
-        "max_supply": 210000000.0
-       
-    
-      },
-      { 
-        "id": 2243,
-        "name": "Dragonchain",
-        "symbol": "DRGN",
-        "website_slug": "dragonchain",
-        "rank": 98,
-        "circulating_supply": 238421940.0,
-        "total_supply": 433494437.0
-        
-       
-     
-      },
-      { 
-        "id": 2246,
-        "name": "CyberMiles",
-        "symbol": "CMT",
-        "website_slug": "cybermiles",
-        "rank": 90,
-        "circulating_supply": 695233506.0,
-        "total_supply": 1000000000.0
-        
-       
-
-      },
-      { 
-        "id": 2299,
-        "name": "aelf",
-        "symbol": "ELF",
-        "website_slug": "aelf",
-        "rank": 69,
-        "circulating_supply": 250000000.0,
-        "total_supply": 280000000.0,
-        "max_supply": 1000000000.0
-       
-   
-      },
-      { 
-        "id": 2300,
-        "name": "WAX",
-        "symbol": "WAX",
-        "website_slug": "wax",
-        "rank": 94,
-        "circulating_supply": 932901783.0,
-        "total_supply": 1850000000.0
-        
-      
-   
-      },
-      { 
-        "id": 2349,
-        "name": "Mixin",
-        "symbol": "XIN",
-        "website_slug": "mixin",
-        "rank": 72,
-        "circulating_supply": 442966.0,
-        "total_supply": 1000000.0
-        
-       
-
-      },
-      { 
-        "id": 2403,
-        "name": "MOAC",
-        "symbol": "MOAC",
-        "website_slug": "moac",
-        "rank": 66,
-        "circulating_supply": 62463334.0,
-        "total_supply": 151205864.0
-        
-        
-         
-     
-      },
-      { 
-        "id": 2405,
-        "name": "IOST",
-        "symbol": "IOST",
-        "website_slug": "iostoken",
-        "rank": 60,
-        "circulating_supply": 8400000000.0,
-        "total_supply": 21000000000.0
-        
-       
-   
-      },
-      { 
-        "id": 2416,
-        "name": "Theta Token",
-        "symbol": "THETA",
-        "website_slug": "theta-token",
-        "rank": 89,
-        "circulating_supply": 684002689.0,
-        "total_supply": 1000000000.0
-        
-        
-
-      },
-      { 
-        "id": 2469,
-        "name": "Zilliqa",
-        "symbol": "ZIL",
-        "website_slug": "zilliqa",
-        "rank": 33,
-        "circulating_supply": 7780347516.0,
-        "total_supply": 12600000000.0
-        
-       
-      },
-      { 
-        "id": 2492,
-        "name": "Elastos",
-        "symbol": "ELA",
-        "website_slug": "elastos",
-        "rank": 88,
-        "circulating_supply": 7638597.0,
-        "total_supply": 33558630.0
-        
-      
-
-      },
-      { 
-        "id": 2502,
-        "name": "Huobi Token",
-        "symbol": "HT",
-        "website_slug": "huobi-token",
-        "rank": 71,
-        "circulating_supply": 50000200.0,
-        "total_supply": 500000000.0
-        
-        
-
-      },
-      { 
-        "id": 2563,
-        "name": "TrueUSD",
-        "symbol": "TUSD",
-        "website_slug": "trueusd",
-        "rank": 68,
-        "circulating_supply": 82213882.0,
-        "total_supply": 82213882.0
-        
-      
-     
-      },
-      { 
-        "id": 2566,
-        "name": "Ontology",
-        "symbol": "ONT",
-        "website_slug": "ontology",
-        "rank": 26,
-        "circulating_supply": 184206203.0,
-        "total_supply": 1000000000.0
-        
-       
-   
-      },
-      { 
-        "id": 2575,
-        "name": "Bitcoin Private",
-        "symbol": "BTCP",
-        "website_slug": "bitcoin-private",
-        "rank": 91,
-        "circulating_supply": 20524490.0,
-        "total_supply": 20524490.0,
-        "max_supply": 21000000.0
-       
-   
-      },
-      { 
-        "id": 2591,
-        "name": "Dropil",
-        "symbol": "DROP",
-        "website_slug": "dropil",
-        "rank": 70,
-        "circulating_supply": 21658573382.0,
-        "total_supply": 30000000000.0
-        
-       
-
-      },
-      { 
-        "id": 2603,
-        "name": "Pundi X",
-        "symbol": "NPXS",
-        "website_slug": "pundi-x",
-        "rank": 45,
-        "circulating_supply": 108288149315.0,
-        "total_supply": 280255193861.0
-        
-       
-      },
-      { 
-        "id": 2606,
-        "name": "Wanchain",
-        "symbol": "WAN",
-        "website_slug": "wanchain",
-        "rank": 62,
-        "circulating_supply": 106152493.0,
-        "total_supply": 210000000.0
-        
-      
-        
-      },
-      { 
-        "id": 2608,
-        "name": "Mithril",
-        "symbol": "MITH",
-        "website_slug": "mithril",
-        "rank": 56,
-        "circulating_supply": 377392092.0,
-        "total_supply": 1000000000.0
-        
-     
-    
-      },
-      { 
-        "id": 2682,
-        "name": "Holo",
-        "symbol": "HOT",
-        "website_slug": "holo",
-        "rank": 42,
-        "circulating_supply": 133214575156.0,
-        "total_supply": 177619433541.0
-        
-       
-   
-      },
-      { 
-        "id": 2874,
-        "name": "Aurora",
-        "symbol": "AOA",
-        "website_slug": "aurora",
-        "rank": 95,
-        "circulating_supply": 3460941244.0,
-        "total_supply": 10000000000.0
-        
- 
-      },
-      { 
-        "id": 3077,
-        "name": "VeChain",
-        "symbol": "VET",
-        "website_slug": "vechain",
-        "rank": 19,
-        "circulating_supply": 55454734800.0,
-        "total_supply": 86712634466.0
-        
-      
-          }
-        ]
+  "users": [
+    {
+      "email": "",
+      "password": "2226684",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "hello",
+      "id": 2
+    },
+    {
+      "email": "cain910772@yahoo.com",
+      "password": "2226684",
+      "id": 4
+    },
+    {
+      "email": "cain910772@yahoo.com",
+      "password": "2226684",
+      "id": 5
+    },
+    {
+      "email": "cain910772@yahoo.com",
+      "password": "2226684",
+      "id": 6
     }
-
-    
-      
-    
-
-    
-  
-    
-    
-    
-
+  ],
+  "allcoins": [
+    {
+      "id": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "website_slug": "bitcoin",
+      "rank": 1,
+      "circulating_supply": 17265737,
+      "total_supply": 17265737,
+      "max_supply": 21000000,
+      "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAgVBMVEX////3lyL3lR/5p0X4nS/4mSf4nzP4ojn4min5pUD4oDb4ozz5qkr3jwD3kgD3jQD4nSb/9er6tGr2iAD93cD+69v/+/T4mhj96NT5qE7+7uH//Pn95Mz7zJ/7v4D82Lb7x5b5q1j6unj5r2H8yI/7u3L6wIj6sVj80qz5oyv8zZfEDZ3jAAAG70lEQVRoge2aa3eiMBCGmxBCAAmBogFREFFr9///wA1RA2LCxdrdL76np8fT0j7MZDKXwMfHW2+99dZbb73135Xn/54ZbcrDceF8s2/x5SyOh3IT/SPw4csVshZSlpDrOI6fHZJfvoEoOS78G/eKvsp1sHX8Rf76kDkt+A594ftocVj/Cnq5/3YXA+ir/Wy/fD36yIaMbumuw4+vtX5V3PnbyHalHHZavY5dLsYdrtCNkJu8CB0Vzjy074vQe43xyy93Lloan70g8Mpv6wm07/sO+7Hr/3w/h27E//yMfXCeRguxw4/Y/g/QP6Qr9nNoUW+ep/9xRtPZMLqhP7nu5fcA2hXRzBdjaCH6VMyn3ya023w77jZ5ngmsr6zXoIX4E/s9+rI0aJG4kZcJUi0bqNi5Wm1Eex5azM91haux2rWqIlkvset6sm3YojG0ECvmsktH53D/2Pwur3yXbZpPKRtFN/SZy74yhFkmvV04Lt41HyJrHO152Jnn+EJruGhUZPSUyHVqeV3sjaIb0/dz2CnWokWtkh5cc9+35KIf0IXVQ9+xMcazIv7oatEizi7B44nbSJsPG5RVdV1lHsNmNMYknmE406PFAlvygtjx+Lb5kK/lcq6WZc08E1qITjf90XCVSJmE7fAp6XeJGweb0ML0yau+7Bve1o+hDiG3sAGNMaJTO9rC16Idj7Fqn5r/LmImNELgNI0dLR7RPmZWfUqi4Q27ZQa0kDttr5f4wWq/3k6ZQyMPG9AITaxuR7/vcBeV2itX63R5N6HHyIBGyJ602yLL7YeZ7zzUhnyzjRnlnNO6s4vO3IAWwlMm2AT30WIGWPSPIDJ2SyuYb9RPN9yERohP8btM6/3mjPdve8vagl2pn6bchEYITol34fXHvpAl+bos9u3Nb1ibzZByvLL8AY0QccfZkadrSZ2q4kwUCBV4a7/NZkzt/QMzoRu/j2+2BGtbUlm4fC9T11VtOmktd5GZjTqxYdIWD7Sknq/WvlAJpa3WW25GI8LPo/DCM6KbNlzdfcKvdvP65s6EEhMZEUImRNyXMzgDbG/XrYFEA7S77cJ8e4pdrueTBj6eZhqkCS02dX27bpUhxJi7u69WUekDPZoQ4I/C2dD4IUxXF8a8PmtKXF736eQqm4/C+RBaVFUV2caNc0cnHdEx9ooPoUVo60tMVxEiOjQhwTh8CC2y2YTxY8e1bBKMnVHfwTXNMO5FTb6Klml632SsqQ5t23Pg+j6cdjir5FR7tJHXPfnKM6JBC/ioz/gg2vPayrjElIPb8nLUqXt7oEFPgbNBNMbtQUdOuxsKtIX1Ywc1aNsejfYP3xlCi9Rdq5Vzu9mMkDbdnKkGbQNvFP7lOQb2tVQztbrFXTqBbdEq6SPatmGtBXZVoAGz5eSj0lrJ7/zeprstfUQL+HhhUf2RafIBqrYsu3C7swdP8BFtAzpeUhM2iL6bOFlnyVuHiK0GHtEA0PFmImKDaIyIpRY9VovOSec/p1SDFvAJM4vrDaEbkKot54vfCbfvTtdjqEEDOB7sTcSZ0DcrVW1JheU2B72ivqUatDB8yqFUyQbRAqd6tpVNaXXuzf0J1aEFfMrQEDl4CC28bKk0kzweOGxDLRpAMumBX430a91uKnN1SiuqRQv4eIppVPIBNKA8M/ovjSHUowEIpo3Iwu8mo5FXlGuD3VFZUSMaQDTxMWtBDGhEKtPfrGs4gAYwmHoAm1I9uok1zeVyiy8hGEBDGE5+xFkjPRuRfuu93lXhJZIsMICGdPop4IZq0QLuqUwWyTXchABcjnqOUI+WbPg5cIjVV4X08x6RYbNaJ6fKlgUy4qJBkR49UzMa0mn77KKUa9lCy+i8zziFAMppOa+ATWW6XVIjWqz4rEcdsWbiQrIlDQRYFmskvX2CNpTpNvKgCQ2DWUfeH5Fu2JRM1SBdZn2RycHlxCCGBjSEYOZTlnPf8b1mmNhUdjSrJpXLRd9RAxoG4yNWT0cwxLZVP4ibRY+SU4agHj3X6Y0ihwyh7Vsbvhexh0ETCXo0hP4T769s6CBabrF0FzcGQ5PDZaTP2OKtzoZ5T2VRLwwpNIfZRZ+zF/yiE38MM32XYkTD8OnHyHs6gNYn8Z4mF7Mx+nz0M4GupT+BhuEP7G50Cp5Gw8/dz9gi5gMwFmd6dPBsnHeVOoZGfBANQ/TU/u4riimYiw7C/aveyzsDQ5tiQMMQvsDlNwnj4XR0EMYvfCXtoxlFwrFEqgKteslq32lTh53SZTT6s349utFyT4JLITEaTYrXvwF5kxiJmtJtMBpW5S+/+rou94QGQXDHFSL7337p9qoo2Yr+OQw/G4UgK7b/CNxVvlr9hzet33rrrbfeeuutnv4CS5C4Q/6bKvsAAAAASUVORK5CYII="
+    },
+    {
+      "id": 2,
+      "name": "Litecoin",
+      "symbol": "LTC",
+      "website_slug": "litecoin",
+      "rank": 7,
+      "circulating_supply": 58273731,
+      "total_supply": 58273731,
+      "max_supply": 84000000
+    },
+    {
+      "id": 52,
+      "name": "XRP",
+      "symbol": "XRP",
+      "website_slug": "ripple",
+      "rank": 3,
+      "circulating_supply": 39712852387,
+      "total_supply": 99991847422,
+      "max_supply": 100000000000
+    },
+    {
+      "id": 66,
+      "name": "Nxt",
+      "symbol": "NXT",
+      "website_slug": "nxt",
+      "rank": 85,
+      "circulating_supply": 998999942,
+      "total_supply": 998999942,
+      "max_supply": 1000000000
+    },
+    {
+      "id": 74,
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "website_slug": "dogecoin",
+      "rank": 20,
+      "circulating_supply": 116128142230,
+      "total_supply": 116128142230
+    },
+    {
+      "id": 109,
+      "name": "DigiByte",
+      "symbol": "DGB",
+      "website_slug": "digibyte",
+      "rank": 34,
+      "circulating_supply": 10788605784,
+      "total_supply": 10788605784,
+      "max_supply": 21000000000
+    },
+    {
+      "id": 118,
+      "name": "ReddCoin",
+      "symbol": "RDD",
+      "website_slug": "reddcoin",
+      "rank": 57,
+      "circulating_supply": 28808713174,
+      "total_supply": 28808713174
+    },
+    {
+      "id": 131,
+      "name": "Dash",
+      "symbol": "DASH",
+      "website_slug": "dash",
+      "rank": 11,
+      "circulating_supply": 8318171,
+      "total_supply": 8318171,
+      "max_supply": 18900000
+    },
+    {
+      "id": 213,
+      "name": "MonaCoin",
+      "symbol": "MONA",
+      "website_slug": "monacoin",
+      "rank": 86,
+      "circulating_supply": 62241325,
+      "total_supply": 62241325
+    },
+    {
+      "id": 291,
+      "name": "MaidSafeCoin",
+      "symbol": "MAID",
+      "website_slug": "maidsafecoin",
+      "rank": 55,
+      "circulating_supply": 452552412,
+      "total_supply": 452552412
+    },
+    {
+      "id": 328,
+      "name": "Monero",
+      "symbol": "XMR",
+      "website_slug": "monero",
+      "rank": 9,
+      "circulating_supply": 16402965,
+      "total_supply": 16402965
+    },
+    {
+      "id": 372,
+      "name": "Bytecoin",
+      "symbol": "BCN",
+      "website_slug": "bytecoin-bcn",
+      "rank": 24,
+      "circulating_supply": 184052697322,
+      "total_supply": 184052697322,
+      "max_supply": 184470000000
+    },
+    {
+      "id": 463,
+      "name": "BitShares",
+      "symbol": "BTS",
+      "website_slug": "bitshares",
+      "rank": 32,
+      "circulating_supply": 2656510000,
+      "total_supply": 2656510000,
+      "max_supply": 3600570502
+    },
+    {
+      "id": 467,
+      "name": "BitcoinDark",
+      "symbol": "BTCD",
+      "website_slug": "bitcoindark",
+      "rank": 74,
+      "circulating_supply": 1288862,
+      "total_supply": 1288862
+    },
+    {
+      "id": 512,
+      "name": "Stellar",
+      "symbol": "XLM",
+      "website_slug": "stellar",
+      "rank": 6,
+      "circulating_supply": 18783811427,
+      "total_supply": 104284038362
+    },
+    {
+      "id": 558,
+      "name": "Emercoin",
+      "symbol": "EMC",
+      "website_slug": "emercoin",
+      "rank": 92,
+      "circulating_supply": 42118422,
+      "total_supply": 42118422
+    },
+    {
+      "id": 693,
+      "name": "Verge",
+      "symbol": "XVG",
+      "website_slug": "verge",
+      "rank": 40,
+      "circulating_supply": 15172086051,
+      "total_supply": 15172086051,
+      "max_supply": 16555000000
+    },
+    {
+      "id": 789,
+      "name": "Nexus",
+      "symbol": "NXS",
+      "website_slug": "nexus",
+      "rank": 99,
+      "circulating_supply": 58447015,
+      "total_supply": 58447015
+    },
+    {
+      "id": 825,
+      "name": "Tether",
+      "symbol": "USDT",
+      "website_slug": "tether",
+      "rank": 8,
+      "circulating_supply": 2756421736,
+      "total_supply": 3080109502
+    },
+    {
+      "id": 873,
+      "name": "NEM",
+      "symbol": "XEM",
+      "website_slug": "nem",
+      "rank": 17,
+      "circulating_supply": 8999999999,
+      "total_supply": 8999999999
+    },
+    {
+      "id": 1027,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "website_slug": "ethereum",
+      "rank": 2,
+      "circulating_supply": 101933945,
+      "total_supply": 101933945
+    },
+    {
+      "id": 1042,
+      "name": "Siacoin",
+      "symbol": "SC",
+      "website_slug": "siacoin",
+      "rank": 41,
+      "circulating_supply": 36817171515,
+      "total_supply": 36817171515
+    },
+    {
+      "id": 1104,
+      "name": "Augur",
+      "symbol": "REP",
+      "website_slug": "augur",
+      "rank": 47,
+      "circulating_supply": 11000000,
+      "total_supply": 11000000
+    },
+    {
+      "id": 1168,
+      "name": "Decred",
+      "symbol": "DCR",
+      "website_slug": "decred",
+      "rank": 30,
+      "circulating_supply": 8461286,
+      "total_supply": 8461286,
+      "max_supply": 21000000
+    },
+    {
+      "id": 1169,
+      "name": "PIVX",
+      "symbol": "PIVX",
+      "website_slug": "pivx",
+      "rank": 100,
+      "circulating_supply": 56781166,
+      "total_supply": 56781166
+    },
+    {
+      "id": 1214,
+      "name": "Lisk",
+      "symbol": "LSK",
+      "website_slug": "lisk",
+      "rank": 23,
+      "circulating_supply": 110079306,
+      "total_supply": 125320572
+    },
+    {
+      "id": 1229,
+      "name": "DigixDAO",
+      "symbol": "DGD",
+      "website_slug": "digixdao",
+      "rank": 79,
+      "circulating_supply": 2000000,
+      "total_supply": 2000000
+    },
+    {
+      "id": 1230,
+      "name": "Steem",
+      "symbol": "STEEM",
+      "website_slug": "steem",
+      "rank": 39,
+      "circulating_supply": 280245997,
+      "total_supply": 297220091
+    },
+    {
+      "id": 1274,
+      "name": "Waves",
+      "symbol": "WAVES",
+      "website_slug": "waves",
+      "rank": 37,
+      "circulating_supply": 100000000,
+      "total_supply": 100000000
+    },
+    {
+      "id": 1320,
+      "name": "Ardor",
+      "symbol": "ARDR",
+      "website_slug": "ardor",
+      "rank": 63,
+      "circulating_supply": 998999495,
+      "total_supply": 998999495,
+      "max_supply": 998999495
+    },
+    {
+      "id": 1321,
+      "name": "Ethereum Classic",
+      "symbol": "ETC",
+      "website_slug": "ethereum-classic",
+      "rank": 15,
+      "circulating_supply": 104513037,
+      "total_supply": 104513037
+    },
+    {
+      "id": 1343,
+      "name": "Stratis",
+      "symbol": "STRAT",
+      "website_slug": "stratis",
+      "rank": 48,
+      "circulating_supply": 99012456,
+      "total_supply": 99012456
+    },
+    {
+      "id": 1376,
+      "name": "NEO",
+      "symbol": "NEO",
+      "website_slug": "neo",
+      "rank": 14,
+      "circulating_supply": 65000000,
+      "total_supply": 100000000,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1414,
+      "name": "ZCoin",
+      "symbol": "XZC",
+      "website_slug": "zcoin",
+      "rank": 93,
+      "circulating_supply": 5628930,
+      "total_supply": 5628930,
+      "max_supply": 21400000
+    },
+    {
+      "id": 1437,
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "website_slug": "zcash",
+      "rank": 21,
+      "circulating_supply": 4789169,
+      "total_supply": 4789169
+    },
+    {
+      "id": 1455,
+      "name": "Golem",
+      "symbol": "GNT",
+      "website_slug": "golem-network-tokens",
+      "rank": 51,
+      "circulating_supply": 959242000,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 1518,
+      "name": "Maker",
+      "symbol": "MKR",
+      "website_slug": "maker",
+      "rank": 35,
+      "circulating_supply": 728228,
+      "total_supply": 1000000
+    },
+    {
+      "id": 1521,
+      "name": "Komodo",
+      "symbol": "KMD",
+      "website_slug": "komodo",
+      "rank": 54,
+      "circulating_supply": 109717416,
+      "total_supply": 109717416
+    },
+    {
+      "id": 1567,
+      "name": "Nano",
+      "symbol": "NANO",
+      "website_slug": "nano",
+      "rank": 28,
+      "circulating_supply": 133248289,
+      "total_supply": 133248289,
+      "max_supply": 133248290
+    },
+    {
+      "id": 1586,
+      "name": "Ark",
+      "symbol": "ARK",
+      "website_slug": "ark",
+      "rank": 80,
+      "circulating_supply": 105127224,
+      "total_supply": 136377224
+    },
+    {
+      "id": 1684,
+      "name": "Qtum",
+      "symbol": "QTUM",
+      "website_slug": "qtum",
+      "rank": 27,
+      "circulating_supply": 88886792,
+      "total_supply": 100886792
+    },
+    {
+      "id": 1697,
+      "name": "Basic Attention Token",
+      "symbol": "BAT",
+      "website_slug": "basic-attention-token",
+      "rank": 46,
+      "circulating_supply": 1000000000,
+      "total_supply": 1500000000
+    },
+    {
+      "id": 1698,
+      "name": "Horizen",
+      "symbol": "ZEN",
+      "website_slug": "zencash",
+      "rank": 73,
+      "circulating_supply": 4709300,
+      "total_supply": 4709300,
+      "max_supply": 21000000
+    },
+    {
+      "id": 1700,
+      "name": "Aeternity",
+      "symbol": "AE",
+      "website_slug": "aeternity",
+      "rank": 38,
+      "circulating_supply": 233020472,
+      "total_supply": 273685830
+    },
+    {
+      "id": 1703,
+      "name": "Metaverse ETP",
+      "symbol": "ETP",
+      "website_slug": "metaverse",
+      "rank": 44,
+      "circulating_supply": 51632344,
+      "total_supply": 56366477,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1720,
+      "name": "IOTA",
+      "symbol": "MIOTA",
+      "website_slug": "iota",
+      "rank": 12,
+      "circulating_supply": 2779530283,
+      "total_supply": 2779530283,
+      "max_supply": 2779530283
+    },
+    {
+      "id": 1727,
+      "name": "Bancor",
+      "symbol": "BNT",
+      "website_slug": "bancor",
+      "rank": 77,
+      "circulating_supply": 53639448,
+      "total_supply": 78308647
+    },
+    {
+      "id": 1750,
+      "name": "GXChain",
+      "symbol": "GXS",
+      "website_slug": "gxchain",
+      "rank": 84,
+      "circulating_supply": 60000000,
+      "total_supply": 100000000,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1757,
+      "name": "FunFair",
+      "symbol": "FUN",
+      "website_slug": "funfair",
+      "rank": 82,
+      "circulating_supply": 5010848189,
+      "total_supply": 10999873621
+    },
+    {
+      "id": 1758,
+      "name": "TenX",
+      "symbol": "PAY",
+      "website_slug": "tenx",
+      "rank": 78,
+      "circulating_supply": 109307861,
+      "total_supply": 205218256
+    },
+    {
+      "id": 1759,
+      "name": "Status",
+      "symbol": "SNT",
+      "website_slug": "status",
+      "rank": 52,
+      "circulating_supply": 3470483788,
+      "total_supply": 6804870174
+    },
+    {
+      "id": 1765,
+      "name": "EOS",
+      "symbol": "EOS",
+      "website_slug": "eos",
+      "rank": 5,
+      "circulating_supply": 906245118,
+      "total_supply": 1006245120
+    },
+    {
+      "id": 1776,
+      "name": "MCO",
+      "symbol": "MCO",
+      "website_slug": "mco",
+      "rank": 76,
+      "circulating_supply": 15793831,
+      "total_supply": 31587682
+    },
+    {
+      "id": 1785,
+      "name": "Gas",
+      "symbol": "GAS",
+      "website_slug": "gas",
+      "rank": 87,
+      "circulating_supply": 10128375,
+      "total_supply": 17190378,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1789,
+      "name": "Populous",
+      "symbol": "PPT",
+      "website_slug": "populous",
+      "rank": 50,
+      "circulating_supply": 37004027,
+      "total_supply": 53252246,
+      "max_supply": 53252246
+    },
+    {
+      "id": 1808,
+      "name": "OmiseGO",
+      "symbol": "OMG",
+      "website_slug": "omisego",
+      "rank": 22,
+      "circulating_supply": 140245398,
+      "total_supply": 140245398
+    },
+    {
+      "id": 1831,
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "website_slug": "bitcoin-cash",
+      "rank": 4,
+      "circulating_supply": 17346188,
+      "total_supply": 17346188,
+      "max_supply": 21000000
+    },
+    {
+      "id": 1839,
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "website_slug": "binance-coin",
+      "rank": 16,
+      "circulating_supply": 95512523,
+      "total_supply": 192443301
+    },
+    {
+      "id": 1866,
+      "name": "Bytom",
+      "symbol": "BTM",
+      "website_slug": "bytom",
+      "rank": 43,
+      "circulating_supply": 1002499275,
+      "total_supply": 1407000000
+    },
+    {
+      "id": 1876,
+      "name": "Dentacoin",
+      "symbol": "DCN",
+      "website_slug": "dentacoin",
+      "rank": 67,
+      "circulating_supply": 325226613094,
+      "total_supply": 1963173416169,
+      "max_supply": 8000000000000
+    },
+    {
+      "id": 1896,
+      "name": "0x",
+      "symbol": "ZRX",
+      "website_slug": "0x",
+      "rank": 31,
+      "circulating_supply": 539562647,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 1903,
+      "name": "Hshare",
+      "symbol": "HSR",
+      "website_slug": "hshare",
+      "rank": 59,
+      "circulating_supply": 43476002,
+      "total_supply": 43476002,
+      "max_supply": 84000000
+    },
+    {
+      "id": 1908,
+      "name": "Nebulas",
+      "symbol": "NAS",
+      "website_slug": "nebulas-token",
+      "rank": 83,
+      "circulating_supply": 45500000,
+      "total_supply": 100000000,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1925,
+      "name": "Waltonchain",
+      "symbol": "WTC",
+      "website_slug": "waltonchain",
+      "rank": 49,
+      "circulating_supply": 40144099,
+      "total_supply": 70000000,
+      "max_supply": 100000000
+    },
+    {
+      "id": 1934,
+      "name": "Loopring",
+      "symbol": "LRC",
+      "website_slug": "loopring",
+      "rank": 96,
+      "circulating_supply": 572074043,
+      "total_supply": 1374956262
+    },
+    {
+      "id": 1958,
+      "name": "TRON",
+      "symbol": "TRX",
+      "website_slug": "tron",
+      "rank": 13,
+      "circulating_supply": 65748111645,
+      "total_supply": 99000000000
+    },
+    {
+      "id": 1966,
+      "name": "Decentraland",
+      "symbol": "MANA",
+      "website_slug": "decentraland",
+      "rank": 81,
+      "circulating_supply": 1050141509,
+      "total_supply": 2644403343
+    },
+    {
+      "id": 1975,
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "website_slug": "chainlink",
+      "rank": 64,
+      "circulating_supply": 350000000,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2010,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "website_slug": "cardano",
+      "rank": 10,
+      "circulating_supply": 25927070538,
+      "total_supply": 31112483745,
+      "max_supply": 45000000000
+    },
+    {
+      "id": 2011,
+      "name": "Tezos",
+      "symbol": "XTZ",
+      "website_slug": "tezos",
+      "rank": 18,
+      "circulating_supply": 607489041,
+      "total_supply": 763306930
+    },
+    {
+      "id": 2021,
+      "name": "RChain",
+      "symbol": "RHOC",
+      "website_slug": "rchain",
+      "rank": 65,
+      "circulating_supply": 380985527,
+      "total_supply": 870663574,
+      "max_supply": 1000000000
+    },
+    {
+      "id": 2027,
+      "name": "Cryptonex",
+      "symbol": "CNX",
+      "website_slug": "cryptonex",
+      "rank": 53,
+      "circulating_supply": 55456537,
+      "total_supply": 106905262,
+      "max_supply": 210000000
+    },
+    {
+      "id": 2062,
+      "name": "Aion",
+      "symbol": "AION",
+      "website_slug": "aion",
+      "rank": 61,
+      "circulating_supply": 216811689,
+      "total_supply": 465934587
+    },
+    {
+      "id": 2083,
+      "name": "Bitcoin Gold",
+      "symbol": "BTG",
+      "website_slug": "bitcoin-gold",
+      "rank": 25,
+      "circulating_supply": 17231799,
+      "total_supply": 17331799,
+      "max_supply": 21000000
+    },
+    {
+      "id": 2087,
+      "name": "KuCoin Shares",
+      "symbol": "KCS",
+      "website_slug": "kucoin-shares",
+      "rank": 58,
+      "circulating_supply": 90730576,
+      "total_supply": 180730576
+    },
+    {
+      "id": 2099,
+      "name": "ICON",
+      "symbol": "ICX",
+      "website_slug": "icon",
+      "rank": 36,
+      "circulating_supply": 387431340,
+      "total_supply": 800460000
+    },
+    {
+      "id": 2132,
+      "name": "Power Ledger",
+      "symbol": "POWR",
+      "website_slug": "power-ledger",
+      "rank": 97,
+      "circulating_supply": 381304031,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2213,
+      "name": "QASH",
+      "symbol": "QASH",
+      "website_slug": "qash",
+      "rank": 75,
+      "circulating_supply": 350000000,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2222,
+      "name": "Bitcoin Diamond",
+      "symbol": "BCD",
+      "website_slug": "bitcoin-diamond",
+      "rank": 29,
+      "circulating_supply": 153756875,
+      "total_supply": 156756875,
+      "max_supply": 210000000
+    },
+    {
+      "id": 2243,
+      "name": "Dragonchain",
+      "symbol": "DRGN",
+      "website_slug": "dragonchain",
+      "rank": 98,
+      "circulating_supply": 238421940,
+      "total_supply": 433494437
+    },
+    {
+      "id": 2246,
+      "name": "CyberMiles",
+      "symbol": "CMT",
+      "website_slug": "cybermiles",
+      "rank": 90,
+      "circulating_supply": 695233506,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2299,
+      "name": "aelf",
+      "symbol": "ELF",
+      "website_slug": "aelf",
+      "rank": 69,
+      "circulating_supply": 250000000,
+      "total_supply": 280000000,
+      "max_supply": 1000000000
+    },
+    {
+      "id": 2300,
+      "name": "WAX",
+      "symbol": "WAX",
+      "website_slug": "wax",
+      "rank": 94,
+      "circulating_supply": 932901783,
+      "total_supply": 1850000000
+    },
+    {
+      "id": 2349,
+      "name": "Mixin",
+      "symbol": "XIN",
+      "website_slug": "mixin",
+      "rank": 72,
+      "circulating_supply": 442966,
+      "total_supply": 1000000
+    },
+    {
+      "id": 2403,
+      "name": "MOAC",
+      "symbol": "MOAC",
+      "website_slug": "moac",
+      "rank": 66,
+      "circulating_supply": 62463334,
+      "total_supply": 151205864
+    },
+    {
+      "id": 2405,
+      "name": "IOST",
+      "symbol": "IOST",
+      "website_slug": "iostoken",
+      "rank": 60,
+      "circulating_supply": 8400000000,
+      "total_supply": 21000000000
+    },
+    {
+      "id": 2416,
+      "name": "Theta Token",
+      "symbol": "THETA",
+      "website_slug": "theta-token",
+      "rank": 89,
+      "circulating_supply": 684002689,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2469,
+      "name": "Zilliqa",
+      "symbol": "ZIL",
+      "website_slug": "zilliqa",
+      "rank": 33,
+      "circulating_supply": 7780347516,
+      "total_supply": 12600000000
+    },
+    {
+      "id": 2492,
+      "name": "Elastos",
+      "symbol": "ELA",
+      "website_slug": "elastos",
+      "rank": 88,
+      "circulating_supply": 7638597,
+      "total_supply": 33558630
+    },
+    {
+      "id": 2502,
+      "name": "Huobi Token",
+      "symbol": "HT",
+      "website_slug": "huobi-token",
+      "rank": 71,
+      "circulating_supply": 50000200,
+      "total_supply": 500000000
+    },
+    {
+      "id": 2563,
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "website_slug": "trueusd",
+      "rank": 68,
+      "circulating_supply": 82213882,
+      "total_supply": 82213882
+    },
+    {
+      "id": 2566,
+      "name": "Ontology",
+      "symbol": "ONT",
+      "website_slug": "ontology",
+      "rank": 26,
+      "circulating_supply": 184206203,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2575,
+      "name": "Bitcoin Private",
+      "symbol": "BTCP",
+      "website_slug": "bitcoin-private",
+      "rank": 91,
+      "circulating_supply": 20524490,
+      "total_supply": 20524490,
+      "max_supply": 21000000
+    },
+    {
+      "id": 2591,
+      "name": "Dropil",
+      "symbol": "DROP",
+      "website_slug": "dropil",
+      "rank": 70,
+      "circulating_supply": 21658573382,
+      "total_supply": 30000000000
+    },
+    {
+      "id": 2603,
+      "name": "Pundi X",
+      "symbol": "NPXS",
+      "website_slug": "pundi-x",
+      "rank": 45,
+      "circulating_supply": 108288149315,
+      "total_supply": 280255193861
+    },
+    {
+      "id": 2606,
+      "name": "Wanchain",
+      "symbol": "WAN",
+      "website_slug": "wanchain",
+      "rank": 62,
+      "circulating_supply": 106152493,
+      "total_supply": 210000000
+    },
+    {
+      "id": 2608,
+      "name": "Mithril",
+      "symbol": "MITH",
+      "website_slug": "mithril",
+      "rank": 56,
+      "circulating_supply": 377392092,
+      "total_supply": 1000000000
+    },
+    {
+      "id": 2682,
+      "name": "Holo",
+      "symbol": "HOT",
+      "website_slug": "holo",
+      "rank": 42,
+      "circulating_supply": 133214575156,
+      "total_supply": 177619433541
+    },
+    {
+      "id": 2874,
+      "name": "Aurora",
+      "symbol": "AOA",
+      "website_slug": "aurora",
+      "rank": 95,
+      "circulating_supply": 3460941244,
+      "total_supply": 10000000000
+    },
+    {
+      "id": 3077,
+      "name": "VeChain",
+      "symbol": "VET",
+      "website_slug": "vechain",
+      "rank": 19,
+      "circulating_supply": 55454734800,
+      "total_supply": 86712634466
+    }
+  ]
+}

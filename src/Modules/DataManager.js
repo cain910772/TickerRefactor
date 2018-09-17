@@ -6,7 +6,7 @@ export default Object.create(null, {
          return fetch(`${remoteURL}/users/${id}`).then(e => e.json())
       }
    },
-   getAll: {
+   getAllUsers: {
       value: function () {
          return fetch(`${remoteURL}/users`).then(e => e.json())
       }

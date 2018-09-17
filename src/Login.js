@@ -1,74 +1,73 @@
-import React, { Component } from "react"
-// import { Jumbotron, Grid, Row, Col, Image, Button, FormControl, Form, Checkbox } from 'react-bootstrap';
+import React, { Component } from "react";
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import "./Login.css";
+import DataManager from "./Modules/DataManager"
+import Register from "./Register"
 
-class Login extends Component {
-
-    // Set initial state
+export default class Login extends Component {
     state = {
         email: "",
         password: ""
+
     }
 
-    // Update state whenever an input field is edited
-    handleFieldChange = function (evt) {
+    handleFieldChange = evt => {
         const stateToChange = {}
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
-    }.bind(this)
-
-    // Handle for login submit
-    handleLogin = function (e) {
-        e.preventDefault()
-
-        // Determine if a user already exists in API
-        fetch(`http://localhost:5002/users`)
-            .then(r => r.json())
-            .then(user => {
-                // User exists. Set local storage, and show home view
-                if (user.email) {
-                    // this.props.setActiveUser(user[0].id)
-                    this.props.showView("home")
-
-                    // User doesn't exist
-                } else {
-                    // Create user in API
-                    fetch("http://localhost:5002/users", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({ email: this.state.email, password: this.state.password })
-                    })
-
-                        // Set local storage with newly created user's id and show home view
-                        .then(newUser => {
-                            this.props.setActiveUser(newUser.id)
-                            this.props.showView("home")
-                        })
-                }
-
-            })
-    }.bind(this)
-
-
-    /*
-        TODO:
-            - Add first name field
-            - Add last name field
-            - Add password verification field
-    */
-    render() {
-        return (
-            <form className="form-signin" onSubmit={this.handleLogin}>
-                <h1 className="h3 mb-3 font-weight-normal">Please sign in or Register</h1>
-                <label htmlFor="inputemail" className="sr-only">Email</label>
-                <input onChange={this.handleFieldChange} type="email" id="email" className="form-control" placeholder="Email address" required="" autoFocus="" />
-                <label htmlFor="password" className="sr-only">Password</label>
-                <input onChange={this.handleFieldChange} type="Password" id="Password" className="form-control" placeholder="Password" required="" />
-                <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in/Register</button>
-
-            </form>
-        )
     }
-}
-export default Login;
+
+    login = () => {
+        DataManager.getAllUsers()
+            .then(result => {
+                let users = result.find(result => {
+                    //Checks to see if the info entered is in the database
+                    return this.state.email === result.email && this.state.password === result.password
+                })
+                if (!users) {
+                    alert("Email does not exist")
+                } else {
+                    return DataManager.getAllUser(this.state.email)
+                        .then((result) => {
+                            let stringifiedUserObject = JSON.stringify(result);
+                            sessionStorage.setItem("userInfo", stringifiedUserObject)
+                        })
+                        .then(() => this.props.history.push("/MyCoins"))
+                        .then(() => this.props.handleNavChange())
+                }
+            })
+    }
+ 
+        render() {
+            return (
+                <section className="hero login-form is-fullheight">
+                    <div className="">
+                        <div>
+                        </div>
+                        <div className="container has-text-centered">
+                               
+                                </div>
+                            <div className="column is-4 is-offset-4 form">
+                                <div className="">
+                                        <div className="field">
+                                            <div className="control">
+                                                <label className="login-flag">Email</label>
+                                                <input id="email" onChange={this.handleFieldChange} className="input is-large" type="text" placeholder="Email" />
+                                            </div>
+                                        </div>
+    
+                                        <div className="field">
+                                            <div className="control">
+                                                <label className="login-flag">Password</label>
+                                                <input id="password1" onChange={this.handleFieldChange} className="input is-large" type="password" placeholder="Password" />
+                                            </div>
+                                        </div>
+                                        <Button className="button is-block is-warning is-large is-fullwidth"onClick={this.login}>Submit</Button>
+                                        </div>
+<div> <Register /></div>
+                                 
+                                        </div>
+                                    </div>
+                         
+                            </section>)}}
+                           

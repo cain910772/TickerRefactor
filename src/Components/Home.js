@@ -9,11 +9,10 @@ export default class Home extends Component{
 
   render(){
     return(
+
         <div>
-        <div>
-          <MyJumboTron />
-        <Login />
+        hello
         </div>
-        Home</div>
+
     )}}
 
