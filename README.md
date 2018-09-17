@@ -7,7 +7,7 @@ My midstone solves an issue that I have with trading cryptocurrencies. There are
 App will be built using React, React Bootstrap, React Dom, React Router and other packages that I may find and list at a later time. App will use the Coin Market Cap and Cryptocompare Api’s The Apps MVP will consist of the ability of the user to login, view data on any coin of their choice on an exchange of their choice and select individual assets to follow base on their portfolio.
 
 The project will be based on the following ERD:
-<div><img id="x" src=".src/Components/pics/new_erd.PNG"></div>
+<div><img id="x" src="https://erdplus.com/#/edit-diagram/649204"></div>
 
 Stretch Goals:
 
