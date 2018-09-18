@@ -16,8 +16,8 @@ return(
 <Jumbotron className = "Jumbotron">
 <center>
   <h1>Welcome to Arbitrage!</h1>
-  <h4> The App that is designed to assist you seeing your assets value on different Exchanges
-  </h4>
+  <h2> The App that is designed to assist you seeing your assets value on different Exchanges</h2>
+  
   </center>
 </Jumbotron>
   

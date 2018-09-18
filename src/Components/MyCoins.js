@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DataManager from "../Modules/DataManager"
 import "./mycoins.css"
-
+import MyCryptoContainer from './MyCryptoContainer';
 
 export default class MyCoins extends Component {
 
@@ -33,10 +33,9 @@ export default class MyCoins extends Component {
                                 <h3> <div>Ticker Symbol: {AllCoins.symbol}</div></h3>
                             </div>
                             <div className="flip-card-back">
-
                                 <h4><div>Circulating Supply: {AllCoins.circulating_supply}</div>
                                     <div>Total Supply: {AllCoins.total_supply}</div></h4>
-                                    <button className="button1">Save to Portfolio</button>
+                                    <MyCryptoContainer />
                             </div>
                         </div>
                     </ div>

@@ -1,29 +1,52 @@
 {
+  "valueint": [
+    {
+      "id": 1,
+      "usersId": 1,
+      "coinId": 3
+    }
+
+  ],
   "users": [
     {
-      "email": "",
-      "password": "2226684",
+      "email": "cain910772@yahoo.com",
+      "password": "mypassword",
       "id": 1
     },
     {
-      "email": "",
-      "password": "hello",
+      "email": "mkmnyplspls09101977@gmail.com",
+      "password": "rig0",
       "id": 2
     },
     {
       "email": "cain910772@yahoo.com",
-      "password": "2226684",
+      "password": "hello",
       "id": 4
     },
     {
-      "email": "cain910772@yahoo.com",
-      "password": "2226684",
+      "email": "will@will.com",
+      "password": "will",
       "id": 5
     },
     {
-      "email": "cain910772@yahoo.com",
-      "password": "2226684",
+      "email": "mkmnyplspls09101977@gmail.com",
+      "password": "dddddd",
       "id": 6
+    },
+    {
+      "email": "joe@shepherd.com",
+      "password": "password",
+      "id": 7
+    },
+    {
+      "email": "cain910772@yahoo.com",
+      "password": "password",
+      "id": 8
+    },
+    {
+      "email": "will@willy.com",
+      "password": "password",
+      "id": 9
     }
   ],
   "allcoins": [

@@ -7,8 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MyCrypto from "./Components/MyCrypto"
 import Login from "./Login"
 import MyExchanges from "./Components/MyExchanges"
-import TickerPullContainer from './Components/TickerPullContainer';
-
+import Register from "./Register"
 
 
 class App extends Component {
@@ -27,6 +26,7 @@ class App extends Component {
           <Route path="/MyCoins" component={MyCoins} />
           <Route path="/MyCrypto" component={MyCrypto} />
           <Route path="/MyExchanges" component={MyExchanges} />
+          <Route path="/Register" component={Register}/>
 
         </div>
       </Router>
