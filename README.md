@@ -1,6 +1,5 @@
 
-     
-23 lines (10 sloc)  1.96 KB
+
 				Arbitrage
 My midstone solves an issue that I have with trading cryptocurrencies. There are many , many crypto exchanges where blockchain based assets are traded. Due to the amount of available places to purchase coins, one of the ways a trader can take advantage of this is called arbitrage. Often a particular asset is trading higher on one exchange than another. The only way to currently see that is to go to those sites and view each pair individually. My App’s aim is to use Coin Market Caps API as well as the Cryptocompare API to find the top one-hundred assets value per each of the top exchanges and allow the user to view arbitrage opportunities. Also to allow the user to select specific coins to follow based on the user’s individual portfolio.
 
