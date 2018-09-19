@@ -41,4 +41,13 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    
   }
+  .picCard{
+    height: 50px;
+    width: 10%;
+    image:center
+ 
+  }
+  
+  

@@ -24,7 +24,7 @@ class MyNavBar extends Component {
           <NavItem eventKey={3} href="/MyCoins">
             All Coins
           </NavItem>
-          <NavItem eventKey={4} href="/MyCrypto">
+          <NavItem eventKey={4} href="/MyCoins">
             My Coins
           </NavItem>
           <NavItem eventKey={5} href="/MyExchanges">
