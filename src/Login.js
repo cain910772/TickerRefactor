@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import "./Login.css"
-import DataManager from "./Modules/DataManager"
+import UserDb from "./Modules/UserDb"
 
 export default class Login extends Component {
 
@@ -18,7 +18,7 @@ export default class Login extends Component {
 
   handleLogin = (e) => {
       e.preventDefault();
-      DataManager.getAllUsers("users")
+      UserDb.getAllUsers("users")
           .then(users => {
               let email = users.find(users => users.email === this.state.email);
               let password = users.find(users => users.password === this.state.password);
@@ -38,9 +38,9 @@ export default class Login extends Component {
 
   render() {
       return (
-          <div className="login">
+         <center><div className="login">
               <div className="formArea container d-flex flex-column">
-                  <h1 className="gameTitle">Arbitrage!</h1>
+                  <h1 className="gameTitle">Please Login Or Sign up!</h1>
                   <form className="loginForm d-flex flex-column justify-content-center" onSubmit={this.handleLogin}>
                       <input className="formField" onChange={this.handleFieldChange} type="email" id="email" placeholder="Email" />
                       <br></br>
@@ -50,10 +50,11 @@ export default class Login extends Component {
                       </div>
                   </form>
                   <div className="registerBtn btnBackground">
-                      <button className="gameBtn btn" type="button" onClick={this.registerNewAccount}>Create Account</button>
+                      <button className="regBtn" type="button" onClick={this.registerNewAccount}>Create Account</button>
                   </div>
               </div>
           </div>
+          </center>
       )
   }
 }

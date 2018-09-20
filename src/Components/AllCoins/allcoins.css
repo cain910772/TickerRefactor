@@ -46,8 +46,16 @@
   .picCard{
     height: 50px;
     width: 10%;
-    image:center
+    color: black
  
+  }
+
+  .aDiv{
+    color: black
+  }
+
+  .button1{
+    color: black
   }
   
   

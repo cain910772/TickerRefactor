@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Jumbotron, Button} from "react-bootstrap"
-import "./home.css"
-
+import "./Home/home.css"
+import MyNavBar from "./MyNavBar"
+import LogOut from "../LogOut"
+import Search from "./Home/Search"
 
     
 
@@ -15,11 +17,10 @@ return(
   <div>
 <Jumbotron className = "Jumbotron">
 <center>
-  <h1>Welcome to Arbitrage!</h1>
+ <h1>Welcome to Arbitrage!</h1>
   <h2> The App that is designed to assist you seeing your assets value on different Exchanges</h2>
-  
-  </center>
-</Jumbotron>
+  <MyNavBar/>Search: <Search />
+  </center></Jumbotron>
   
 </div>
 )

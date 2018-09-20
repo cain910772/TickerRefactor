@@ -1,10 +1,17 @@
-@media all and (min-width: 480px) {
-    .Login {
-      padding: 60px 0;
-    }
+
+
+
+.login{
+
+  color: aqua;
+ 
   
-    .Login form {
-      margin: 0 auto;
-      max-width: 320px;
-    }
+}
+
+.mybtn{
+  color: black
+
+}
+  .regBtn{
+    color: black;
   }

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import DataManager from "./Modules/DataManager"
+import UserDb from "./Modules/UserDb"
 
 
 
@@ -30,7 +30,7 @@ export default class Register extends Component {
             window.alert("Enter all fields")
 
         }
-        else if(DataManager.getAllUsers("users")
+        else if(UserDb.getAllUsers("users")
         .then(users => {
             let email = users.find(users => users.email === this.state.email);
             let password = users.find(users => users.password === this.state.password  )
@@ -45,7 +45,7 @@ export default class Register extends Component {
                 password: this.state.password}
             
                       alert("Sucess, please log in")
-            DataManager.postUser("users", user).then(() => this.props.history.push("/login"))
+                      UserDb.postUser("users", user).then(() => this.props.history.push("/login"))
         }
     }
 

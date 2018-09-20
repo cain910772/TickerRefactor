@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import MyNavBar from "./Components/MyNavBar"
-import Home from "./Components/Home"
-import AllCoins from "./Components/AllCoins"
+import Home from "./Components/Home/Home"
+import AllCoinsDisplay from "./Components/AllCoins/AllCoinsDisplay"
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import MyCoins from "./Components/MyCryptoContainer"
+import MyCoinsDisplay from "./Components/MyCoins/MyCoinsDisplay"
 import Login from "./Login"
 import MyExchanges from "./Components/MyExchanges"
 import Register from "./Register"
+import MyCryptoContainer from "./Components/MyCoins/MyCoinsContainer"
+import MyJumbotron from './Components/MyJumbotron';
 
 
 class App extends Component {
@@ -15,15 +17,13 @@ class App extends Component {
   render() {
     return (
 
-
       <Router>
-
         <div>
-        <MyNavBar /> 
+       <MyJumbotron />
          <Route path="/Login" component={Login} />
           <Route path="/Home" component={Home} />
-          <Route path="/AllCoins" component={AllCoins} />
-          <Route path="/MyCoins" component={MyCoins} />
+          <Route path="/AllCoins/AllCoinsDisplay" component={AllCoinsDisplay} />
+          <Route path="/MyCoinsDisplay" component={MyCoinsDisplay} />
           <Route path="/MyExchanges" component={MyExchanges} />
           <Route path="/Register" component={Register}/>
 
