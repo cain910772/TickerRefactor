@@ -3,7 +3,6 @@ import {Jumbotron, Button} from "react-bootstrap"
 import "./Home/home.css"
 import MyNavBar from "./MyNavBar"
 import LogOut from "../LogOut"
-import Search from "./Home/Search"
 
     
 
@@ -18,8 +17,8 @@ return(
 <Jumbotron className = "Jumbotron">
 <center>
  <h1>Welcome to Arbitrage!</h1>
-  <h2> The App that is designed to assist you seeing your assets value on different Exchanges</h2>
-  <MyNavBar/>Search: <Search />
+  <h2> The App that is designed to assist seeing your assets value on different Exchanges</h2>
+  <MyNavBar/><LogOut />
   </center></Jumbotron>
   
 </div>

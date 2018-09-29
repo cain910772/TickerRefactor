@@ -10,10 +10,12 @@ import MyExchanges from "./Components/MyExchanges"
 import Register from "./Register"
 import MyCryptoContainer from "./Components/MyCoins/MyCoinsContainer"
 import MyJumbotron from './Components/MyJumbotron';
+import { InstantSearch } from 'react-instantsearch-dom';
+import ReactDOM from 'react-dom';
 
 
 class App extends Component {
-
+ 
   render() {
     return (
 
@@ -26,8 +28,7 @@ class App extends Component {
           <Route path="/MyCoinsDisplay" component={MyCoinsDisplay} />
           <Route path="/MyExchanges" component={MyExchanges} />
           <Route path="/Register" component={Register}/>
-
-        </div>
+           </div>
       </Router>
     );
   }

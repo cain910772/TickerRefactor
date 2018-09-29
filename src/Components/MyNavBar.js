@@ -8,6 +8,7 @@ import "./myNavBar.css"
 class MyNavBar extends Component {
     render() {
        return (
+     
         <Navbar className ="mynavbar" >
         <Navbar.Header>
           <Navbar.Brand>
@@ -30,10 +31,10 @@ class MyNavBar extends Component {
           <NavItem eventKey={5} href="/MyExchanges">
             Exchanges
           </NavItem>
-          <LogOut/>
-          </Nav>
+            </Nav>
              </Navbar>
-
+           
+         
        )
            
              

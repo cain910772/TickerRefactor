@@ -42,7 +42,7 @@ render() {
                      <h4><div>24 Hour Volume Average: {exchanges.volume24hr}</div>
                                 <div>Estimated Marketshare: {exchanges.marketshare}</div></h4>
                                 <h4> <div>Website: <a>{exchanges.website}</a></div></h4>
-                                <button className ="aDiv"id="tryThis"type="submit"onClick={exchanges.website} className="button1">Go to Site</button>
+                             "<a onClick={this.handleClick} style={{cursor: 'pointer'}}>click me!</a> 
 
                         </div>
                     </div>

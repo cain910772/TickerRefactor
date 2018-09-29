@@ -1,16 +1,45 @@
-import React, { Component } from 'react';
+// import React, { Component } from "react";
+// import Search from "react-search-box";
 
+// class MySearch extends Component {
+//   state = {
+//     data: [],
+//     loading: false
+//   };
 
-export default class Search extends React.Component{
+//   componentDidMount = () => {
+//     this.setState({
+//       loading: true
+//     });
 
-render(){
-        return(
-    
-    <form method = "get" title = "Search Form" action="https://cse.google.com/cse/publicurl">
-    <div>
-       <input type="text" id="q" name="q" title="Search this site" alt="Search Text" maxlength="256" />
-       <input type="hidden" id="cx" name="cx" value="013626029654558379071:ze3tw4csia4" />
-      <input type="image" id="searchSubmit" name="submit" src="https://www.flaticon.com/free-icon/active-search-symbol_34148" alt="Go" title="Submit Search Query" />
-    </div>
-   </form> 
-   )}}
+//     fetch("https://api.nomics.com/v1/dashboard?key=bda8c27c06ed079d1e7ebf5b1ebdfe82&currency=BTC")
+//       .then(res => res.json())
+//       .then(data => {
+//         this.setState({
+//           data: data.items,
+//           loading: false
+//         });
+//       });
+//   };
+
+//   handleChange = selection => {
+//     selection ? console.log(selection.full_name) : console.log("reverted");
+//   };
+
+//   render() {
+//     return (
+//       <Search
+//         data={this.state.data}
+//         onChange={this.handleChange}
+//         placeholder="Search for a string..."
+//         class="search-class"
+//         searchKey="currency"
+//         loading={this.state.loading}
+//         width={300}
+//         height={40}
+//       />
+//     );
+//   }
+// }
+
+// export default MySearch;

@@ -13,21 +13,30 @@ export default Object.create(null, {
         }
     },
         getValUser:{
-            value: function (key,userId){
-                return fetch(`${remoteURL}/valueIntersection/${key}/?userId=${userId}`).then(e=>e.json())
+            value: function (userId){
+                return fetch(`${remoteURL}/valueintersection/?userId=${userId}`).then(e=>e.json())
             }
         },
         postVal: {
-            value: (key,object) => {
-               return fetch(`$http://localhost:5002/valueIntersection/${key}?userId`, {
+            value: (coinId,userId) => {
+               return fetch(`${remoteURL}/valueintersection`, {
+                headers: {
+                    "Content-Type": "application/json"
+                 },
                   method: "POST",
-                  headers: {
-                     "Content-Type": "application/json"
-                  },
-                  body: JSON.stringify(object)})
-           
+                  body: JSON.stringify(coinId,userId),
+                 
+                }
+               )
             }
          },
+         deleteCoin:{ 
+            value: function(id){
+            return fetch(`${remoteURL}/valueintersection/${id}`,{
+             method: "delete"})
+        .then(e => e.json())
 
-    
-    })
+                       }
+            
+}
+})

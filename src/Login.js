@@ -23,9 +23,10 @@ export default class Login extends Component {
               let email = users.find(users => users.email === this.state.email);
               let password = users.find(users => users.password === this.state.password);
               if (email && password) {
-                  localStorage.setItem("user", JSON.stringify(email, password))
-                  sessionStorage.setItem("user", JSON.stringify(email, password))
+              localStorage.setItem("user", JSON.stringify(email, password))
+             sessionStorage.setItem("user", JSON.stringify(email, password))
                   this.props.history.push("/home")
+                 
               } else {
                   window.alert("You have entered an incorrect email or password!")
               }
@@ -37,6 +38,8 @@ export default class Login extends Component {
   }
 
   render() {
+   
+    
       return (
          <center><div className="login">
               <div className="formArea container d-flex flex-column">
@@ -55,6 +58,6 @@ export default class Login extends Component {
               </div>
           </div>
           </center>
-      )
+      )  
   }
 }

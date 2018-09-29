@@ -4,4 +4,46 @@
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUeisG7-zNjrMBj4zzNLOwB7eA7WMbKExoJmaaPAjICcd6iF1z");
     color: aqua;
     
+    
+}
+.hometicker{
+    font-weight: bold
+}
+
+.logoutBtn{
+    float: right;
+}
+
+.tick{
+    color:white;
+    font-weight: bold;
+    background-color: black
+}
+
+.marquee {
+    width: 1250px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color:black;
+    color:yellow;
+    font-weight: bold;
+    font-size: 25px
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;  /* show the marquee just outside the paragraph */
+    animation: marquee 25s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }

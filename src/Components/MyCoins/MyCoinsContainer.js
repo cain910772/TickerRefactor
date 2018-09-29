@@ -1,13 +1,17 @@
  import React, { Component } from 'react';
 import InterDb from "../../Modules/InterDb"
 import "../AllCoins/allcoins.css"
-
+import myButton from "../MyCoins/Buttons.js"
+import Buttons from '../MyCoins/Buttons.js';
+import CoinDb from '../../Modules/CoinDb';
   
 
 export default class MyCoinsContainer extends Component{
    
     state = {
-     AllVal:[]
+     AllVal:[],
+    
+     AllCoins:[]
     }
 
     handleFieldChange = evt => {
@@ -20,43 +24,58 @@ export default class MyCoinsContainer extends Component{
     
     componentDidMount() {
         const newState = {}
-        InterDb.getAllVal()
+
+       let ourId = JSON.parse(sessionStorage.getItem("user")) 
+        InterDb.getValUser(ourId.id)
             .then(AllVal => newState.AllVal = AllVal)
             .then(() => this.setState(newState, () => { console.log("this state after fetch", this.state) }))
-            ;
+
+            CoinDb.getAllCoin()
+            .then(AllCoins => newState.AllCoins = AllCoins)
+            .then(() => this.setState(newState, () => { console.log("this state after fetch", this.state) }))
+
+            
     }
 
     
  
 
     render() {
-
-        const divStyle = {
-            backgroundImage: 'url({AllCoins.img} )',
-          };
+        let val=[]
+        let coins = []
+        this.state.AllCoins.forEach(coin => {
+            this.state.AllVal.forEach(Val =>{
+             if(coin.id === Val.coinId){
+                 coins.push(coin)
+                 val.push(Val.id)
+             }
+         }
+            )
+            
+        });
+  
         return (
-            this.state.AllVal.map(AllVal => {
-                return < div key={AllVal.id} className="flip-card">
+          coins.map(coins => {
+                return < div key={coins.id} className="flip-card">
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                               
-                                <h3><div>User ID: {AllVal.userId}</div></h3>
-                                <h3> <div>Coin Id : {AllVal.coinId}</div></h3> 
-                                 <h3> <div>Still working on it</div></h3>
-                               
+                            <div className ="picCard" ><img src={coins.img} ></img></div>
+                             
+                                <h3> <div>Coin Name : {coins.name}</div></h3> 
+                            
+
                             </div>
                             <div className="flip-card-back">
-                            <h4></h4>
-                                <h4><div></div>
-                                    <div>Hope to have MVP by end of weekend,This seems to be the last piece and its being stubborn</div></h4>
-                                     <button className ="aDiv"id="tryThis"type="submit" className="button1">Remove From Portfolio</button> 
+                            <div><button className="buttons" onClick ={()=>Buttons.getAlert3(coins.id)}>Remove</button ></div>
 
                             </div>
-                        </div>
-                    </ div>
-                </div>
-
+                                
+                  
+                  </div>
+                  </div>
+                  </div>
+                        
 
 
 

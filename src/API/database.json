@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Bitfinex ",
       "volume24hr": "$668,353,522",
-      "marketshare": "26%%",
+      "marketshare": "26%",
       "website": "https://www.bitfinex.com/",
       "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAABxCAMAAABY4TnzAAAAt1BMVEW3t7cAAACkpKW6urpwmzCtra2XxVQAAAwAABK+vr4cHycAABDBwcEAAxQAAAkvMTWdnp9iZWiJi41XWl0zOkBbXFyBg4UACRYAEBuRlJVAREgJDBiVxktsb3IkKjG5t7xrmSIUGCC2ubKkv4GQqHGewm2cw2eKpWYHDxVOUFOxu6SpvZJ3enymvoenspt/oVCGpF1mlxAXGx6uvJ6yuaojJiidq42jwnp1nTuis46Sull+pEuYrXz1g614AAAD2UlEQVR4nO2Xa3ObOBRAJWQsBEQ87FgCYzDOo3bqNI1ru+2m//93rSTAyG7WO+RLpzP3zGQCVw8OlyuBEQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwKLS/GmJj1Ch/fHX15e3t8EjSU8fOo93bZeBdoQ10o692xf9PqJCv15GS8Xon/1AddfpcZvLqJCLkHOOi8hloOmn/6mR3YR9zKKZretD1Fnsduqr+9flSLP8OX4aJs+S2j8RbbQEW6znKXG5b1MnJMztwDxlMa8TpZLu1EjUJjzb1bcMkVlt941cMlv7/iJs3Td+PXVa9+OPRn20PH4vBmaeJVS2CCzoztEhzJU8NgRSNgcTEk5vpLjpwEoeB7daXs3glU3uScaDiZbnVtfg4KIwXQucNA824ry7WXT/OurcvxXFaqh8EGzbh6ws8JapEKcpQbNUkwu+NQcZCqdCpnaNxfjGyKsblEGjQzLqGXlKE9cuG9WCBZ8Q7R7QvC2z6ufy5L4aj4th7lqepqxZVmES4MVJ3oRY4uG4aTbysbUIe3mxmYog0kK9PF+E5xsBi2uBN8SpA56zNu+rzn30pXosxsXAvdLIt1O5PhUx6eQbbpV8e2zkWW/Ty9MECWFyb8uzy0s58obmpcCTrmbQfbtUf+yr78V4/DhcXka5YUr9jRa9Jr/NDO65fJCEji+CqXpaJ3lZmkmjrN8UmRMJIUXS39Vb436PqmflXjx/QL6ez+dr9Uf9ifM/8sJTBDtTsnbmGXFrZe+yXl7ONTi1dnSWYinLfltdafPly5eqeh5rBu6UWt7bOrEhFXydXS+b0hBdyAcqmczkvs98MGkmdftrqR1HYs+L3C71+9fl8utRfRncFdr9caD7+YKdcRGF1+TrmLxf80wXhcp9noqLBdtfimyxWM821Ivi1n716bhS6vtH4158G/ptcyafcrlj1xesLXOWeb2dzIXw5Tu7jRkULrhQLweUY7FzWnv1KabSPm7cHwZ/l52VDZXB9Grm/0OeNmtQV46Up7JpZ9Xo1gSLOlNNJOFinXa5f7obNxQPA99QqHnDegE1YBFgU/O4X2a31JIPLuVp84bl7QbCYiokNfJYerSD79QbdoJvsCkXQtQhz8yI/bgoPu6uPmQO0Yl8oteSCpWnDW5RHk7ymyg6k3d2pf62yaJDt6ezOIpKdSckLSOL3EWTQzTtioVty2hn0lPtH5S+uoGHwfVucG2a6lQHdvNJ1o7bjRd9uphFc07sgd3Z0+e7u89P6K/8HWJ+Qv1pBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC45F8g/VnULPPVBwAAAABJRU5ErkJggg=="
     },
@@ -161,68 +161,11 @@
       "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAACmCAMAAABnVgRFAAAAolBMVEX///9EjMruf0oAAADo8Pm91Otcmc8pgMamxuQ/iskwg8ZrodPy9/s5h8iHsdrS4vLe6fWurq6ioqKavuBPksxeXl709PS7u7sQEBB4eHiUlJTk5OTZ2dltbW3teUA3NzfPz8/tdTeIiIguLi4nJydWVlYdHR1GRkY+Pj5OTk7Gxsb1tp33xK350sH++PXsbSXwlGnzpIH75dzviVp4qdYAd8HOycPWAAAE8ElEQVR4nO2afX+aMBCAqWl17bQdtBDeVFTEFl/qS/v9v9ouCTi1BPA3jKj3/LGhvcLDXXIkbJqGIAiCIAiCIEgx979yeGhDxENuBAS0cyPuK9F8+H6S88au8dWSB7S+2J2+5Zzi+6EazdadlMcm03zuyCM6z0yz+SiPaJ1e866sZs4pUPPCNEuPzfNqXkg2L0QTi46addXEsXmDmlj0G9TEot+gJhYdNVHzejQfpXSE5pM84kloduQRFWm+NH/L+WKarzkBv1+Z5ldOQPOlEk2tnUdhQHFENZbIDfKSN0Ge91/1Ltaz6Wo1na0XyjWhIXWkNHc119PN56AHDD4307VyzaL2LlhMN73Glt5mqjajJTXXyx1JLrpUmtBymvPGgSV4NuZ101z/tGSeCvNZRnNxWPG07urGZ/EmQ9OmmZbgOa2FZpLN9SbbstHYKCt7Cc3pQKY5UJbOEkWXJhPSWQdNkc3Fp1zzU9UkKtacS2sOVVfVO4uLPsvTnNVAU2RTPoMUzqEr0Lyootd+Cl1UQ9KyFx6M3lKRZRnNmVxT1dAs87CUrOOUruTKrDdl6VSXzHKr91X2snilzLLUsji77CoX7yW3bOvlj+Y5ULq1LLkBXqx6ewnt9VZKN+qlXyfMlv9Ee73lTPHrhG/5uxnxX/m2ovPlIGE5V/0W6c/zq5xfhy9R1/PZbK76/RFyo7T/5FGbF/wPnTc5zfviE6gh75+vHuukWa69n5kr0MSiH8sVaGLRj+UKNLHox4KaVYJjs0quQBOLfiyoWSU4NqvkCjSx6MdyBZp1Kvp3S85dbTTbL3mc2w5BLgBP1/38iEDfQi0WH6sx20MnxN37wrIOIhyy5d3TKCHmYYQCDjWD8TjYj9jR7IOmXQvNISHOfgRomq7AsOqiqduRLo5SGWcvoiaaVpzMEG+YfFNLzRSrO0qO6qPpUxp44rPl+8zC+oD54vPjDE1L/IQBQZ74vYAGaWvj33lx7FWp2eVzuW/wCxuEGHAJM5nbNFPTDwlJxkbI4zXfsVn4kIt5hIy1oE/IyKgq8aBpJ0ruVtPrkz3N965gmM506AemsIYYUAlGSbzpCU3TF99UlU+dde2h7n7A33qqaXS7hEQOiAU/2jvX9CNC4EeaZfK7s+BOTerTMZRGaL6b/eHw47C3/Zfmh5dcsJ9qwkfxibGjOdq2d0cIxTYZwYB0ocp8RPd5/jw2hgLWLAqew0dpipHHzh1INB2PwyZGoulDtgPNSsbtOK0u5Z/hVDatSvBAU+vyqmdqZjQknk5fJBNGZmTwp5QYs6A5qW6SH2i6R2kGIQwBRzxZ4fgf42Sm10OT1Zs1ITb6IJsTI4WKmX4yzS5vP2U1WcGJmEcaNJ/+boM8paYlUlNak3cAmzd5a8LvUGCdVhOSOdF2Ne3kojLNgCVTHMIvRaL3WIZxKs2xTqkxEf0o1dQgt44fuGNPqumF2xxa8MiJhpTqwzBpSCfQhMRF7E+ul2pCayFhSEK5ZtrTGfxhKc5yGs14EvK5EE0CTWjaXNNy2EXtn9mMEk0r3BmQmm9yx+jd5WPTrloTMkENw91uF72YJp05gO4SswcOpTvPPA/WfMn9kNHuaWLdMPRY3EEcn2P3mQVbAxjnligmXbLUG1jdZ29O6gU0zaj+ydQuI5m0wv3DCaGuq5/bAUEQBEEQBEGuiL8ctaUX24EPNAAAAABJRU5ErkJggg=="
     }
   ],
-  
-  
   "valueintersection": [
     {
-      "id": 1,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
-      "userId": 3,
-      "exchangeId": 9
-    },
-    {
-      "id": 2,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
+      "coinId": 1214,
       "userId": 1,
-      "exchangeId": 20
-    },
-    {
-      "id": 3,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
-      "userId": 4,
-      "exchangeId": 11
-    },
-    {
-      "id": 4,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
-      "userId": 5,
-      "exchangeId": 6
-    },
-    {
-      "id": 5,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
-      "userId": 6,
-      "exchangeId": 7
-    },
-    {
-      "id": 6,
-      "coinId": [
-        11,
-        17,
-        74
-      ],
-      "userId": 7,
-      "exchangeId": 12
+      "id": 20
     }
   ],
   "users": [

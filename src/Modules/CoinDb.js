@@ -17,7 +17,7 @@ export default Object.create(null, {
            
            postCoin: {
             value: (key,object) => {
-               return fetch(`${remoteURL}/valueIntersection/${key}?coinId`, {
+               return fetch(`${remoteURL}/valueIntersection/?coinId`, {
                   method: "POST",
                   headers: {
                      "Content-Type": "application/json"
