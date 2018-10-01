@@ -78,7 +78,7 @@ export default Object.create(null, {
                 .then(e => e.text())
         }
     },
-})
+
 bigPullVal: {
     value: (...object) => {
         return fetch(`  http://localhost:5002/exchangevalues`, {
@@ -93,5 +93,5 @@ bigPullVal: {
     }
 }
 
-
+})
 

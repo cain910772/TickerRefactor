@@ -4,9 +4,8 @@ export default Object.create(null, {
   getAlert: {
 
     value: function () {
-      alert(
-        ' hello!!'
-      )
+
+      window.location.reload();
     }
   },
 

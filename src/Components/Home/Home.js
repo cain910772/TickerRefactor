@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "../Home/home.css"
-import MySearch from "./Search"
-
+import  Buttons from "../MyCoins/Buttons"
 
 export default class Home extends Component {
     constructor(props) {
@@ -33,7 +32,7 @@ export default class Home extends Component {
 
                     <center><h3 className="tick">Ticker Symbol: {mydashboard.currency}</h3></center>
                     <p className="marquee"><span>
-
+                    <button className = "dummy"onClick={Buttons.getAlert}>Home </button>
                         Week open: {mydashboard.weekOpen}<br></br>Todays Open(If Available): {mydashboard.dayOpen}<br></br>Best Trading Pair:{mydashboard.highQuoteCurrency}<br></br>Best Trading Exchange:{mydashboard.highExchange}<br></br>Weeks Volume(If Available):{mydashboard.weekVolume}</span></p>
 
 

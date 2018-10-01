@@ -32,7 +32,7 @@ export default class MyExchanges extends Component {
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <div className="picCard" ><img src={exchanges.logo} ></img></div>
+                                <div className="picCard" ><img src={exchanges.logo}alt="" ></img></div>
                                 <h3><div>{exchanges.name}</div></h3>
                                 <h4> <div>Website: <a>{exchanges.website}</a></div></h4>
 

@@ -90,7 +90,7 @@ export default class MyCoinsContainer extends Component {
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
                                 {/* <div><BigPull /></div> */}
-                                <div className="picCard" ><img src={metaCoin.img} ></img></div>
+                                <div className="picCard" ><img src={metaCoin.img}alt ="" ></img></div>
                                 <h6> <div>Coin Name : {metaCoin.base}</div></h6>
                                 <p>{metaCoin.market1}price:{metaCoin.price1} </p>
                                 <p>{metaCoin.market2} price:{metaCoin.price2}</p>

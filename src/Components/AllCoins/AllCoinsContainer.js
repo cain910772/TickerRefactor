@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import CoinDb from "../../Modules/CoinDb"
 import "../AllCoins/allcoins.css"
-import AllCoinsDisplay from "../AllCoins/AllCoinsDisplay"
-import { Route } from 'react-router-dom'
 import Buttons from '../MyCoins/Buttons.js';
-import InterDb from "../../Modules/InterDb"
 
 
 
 export default class AllCoinsContainer extends Component {
-    constructor(props) {
-        super(props)
-    }
+ 
+    
     state = {
         AllCoins: [],
         User: []
@@ -27,7 +23,7 @@ export default class AllCoinsContainer extends Component {
 
     componentDidMount() {
         const newState = {}
-        let ourId = JSON.parse(sessionStorage.getItem("user"))
+        // let ourId = JSON.parse(sessionStorage.getItem("user"))
         CoinDb.getAllCoin()
             .then(AllCoins => newState.AllCoins = AllCoins)
             .then(() => this.setState(newState, () => { console.log("this state after fetch", this.state) }))
@@ -47,7 +43,7 @@ export default class AllCoinsContainer extends Component {
                         <div className="flip-card">
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
-                                    <div className="picCard" ><img src={AllCoins.img} ></img></div>
+                                    <div className="picCard" ><img src={AllCoins.img}alt="" ></img></div>
                                     <h3><div>{AllCoins.name}</div></h3>
                                     <br></br>
                                     <h4> <div>Ticker Symbol: {AllCoins.symbol}</div></h4>

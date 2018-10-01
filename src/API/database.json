@@ -774,12 +774,17 @@
   ],
   "valueintersection": [
     {
-      "coinId": 12,
+      "coinId": 18,
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "coinId": 13,
       "userId": 5,
       "id": 2
     },
     {
-      "coinId": 27,
+      "coinId": 4,
       "userId": 5,
       "id": 3
     }
