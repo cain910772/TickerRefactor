@@ -9,7 +9,7 @@
 //         AllCoins:[]
 
 //     }
-     
+
 //     componentDidMount(){
 //         const newState={}
 //         let ourId = JSON.parse(sessionStorage.getItem("user")) 
@@ -22,7 +22,7 @@
 //             .then(AllCoins => newState.AllCoins = AllCoins)
 //             .then(() => this.setState(newState, () => { console.log("this state after fetch", this.state) }))
 
-            
+
 //     }
 //      render(){
 //         let exchange=[]
@@ -36,23 +36,23 @@
 //     })
 
 //          return(
-            
+
 //              this.state.ExchangeData.map(ExchangeData=>{
 //               return< div key ={ExchangeData.id} className="flip-card">
 //               <div className="flip-card">
 //                   <div className="flip-card-inner">
 //                     <div className="flip-card-front">
 //                       {/* <img src={ExchangeData.img} ></img> */}                       
-                     
+
 //                    </div><h4 className="flip-card-back">
 //                    <h3><div>Exchange Name: {ExchangeData.exchange}</div></h3>
 //                       <h3><div>Coin Name : {ExchangeData.base}</div></h3>
 //                      <h3> <div>Quote in: {ExchangeData.quote}</div></h3>
 //                     <div>Price quote: {ExchangeData.price_quote}</div></h4>
 //                       {/* <div>Total Supply: {ExchangeData.total_supply}</div></h4> */}
-              
+
 //                      </div>
 //                 </div>
 //                      </div>
-                
+
 // }))}}

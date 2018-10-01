@@ -15,20 +15,20 @@ import ReactDOM from 'react-dom';
 
 
 class App extends Component {
- 
+
   render() {
     return (
 
       <Router>
         <div>
-       <MyJumbotron />
-         <Route path="/Login" component={Login} />
+          <MyJumbotron />
+          <Route path="/Login" component={Login} />
           <Route path="/Home" component={Home} />
           <Route path="/AllCoins/AllCoinsDisplay" component={AllCoinsDisplay} />
           <Route path="/MyCoinsDisplay" component={MyCoinsDisplay} />
           <Route path="/MyExchanges" component={MyExchanges} />
-          <Route path="/Register" component={Register}/>
-           </div>
+          <Route path="/Register" component={Register} />
+        </div>
       </Router>
     );
   }

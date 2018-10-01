@@ -25,31 +25,32 @@ export default class Register extends Component {
 
     constructNewUser = evt => {
         evt.preventDefault()
-        
-         if ( this.state.email === "" || this.state.password === "") {
+
+        if (this.state.email === "" || this.state.password === "") {
             window.alert("Enter all fields")
 
         }
-        else if(UserDb.getAllUsers("users")
-        .then(users => {
-            let email = users.find(users => users.email === this.state.email);
-            let password = users.find(users => users.password === this.state.password  )
+        else if (UserDb.getAllUsers("users")
+            .then(users => {
+                let email = users.find(users => users.email === this.state.email);
+                let password = users.find(users => users.password === this.state.password)
                 alert("The email or password you have entered is already in use!")
-        }));
-        
-        
-        
+            }));
+
+
+
         else {
             const user = {
                 email: this.state.email,
-                password: this.state.password}
-            
-                      alert("Sucess, please log in")
-                      UserDb.postUser("users", user).then(() => this.props.history.push("/login"))
+                password: this.state.password
+            }
+
+            alert("Sucess, please log in")
+            UserDb.postUser("users", user).then(() => this.props.history.push("/login"))
         }
     }
 
-   
+
 
     render() {
         return (
