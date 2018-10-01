@@ -25,10 +25,12 @@ export default class Home extends Component{
     render() {
       
      return(
-  
+         
         this.state.mydashboard.map(mydashboard=>{
+          
         return <div key ={mydashboard.currency}>
     
+   
      <center><h3 className ="tick">Ticker Symbol: {mydashboard.currency}</h3></center> 
         <p className = "marquee"><span>
 

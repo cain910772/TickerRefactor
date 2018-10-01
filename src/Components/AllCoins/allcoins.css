@@ -13,6 +13,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
+    
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
@@ -25,8 +26,8 @@
  
   .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 120%;
     /* backface-visibility: hidden; */
   }
   
@@ -55,6 +56,9 @@
   }
 
   .button1{
+    color: black
+  }
+  .buttons{
     color: black
   }
   

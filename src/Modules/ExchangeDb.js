@@ -8,4 +8,5 @@ export default Object.create(null, {
             return fetch(`${remoteURL}/exchanges`).then(e=>e.json())
         }
         },
+        
     })

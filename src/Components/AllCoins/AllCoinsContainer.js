@@ -16,11 +16,18 @@ export default class AllCoinsContainer extends Component {
         AllCoins: [],
         User:[]
     }
+  handleFieldChange = evt => {
+        console.log("evt handleFieldChange", evt);
+        const stateToChange = {}
+        stateToChange[evt.target.id] = evt.target.value
+        this.setState(stateToChange)
+     }
 
 
    
     componentDidMount() {   
       const newState = {}
+      let ourId = JSON.parse(sessionStorage.getItem("user")) 
        CoinDb.getAllCoin()
             .then(AllCoins => newState.AllCoins = AllCoins)
             .then(() => this.setState(newState, () => { console.log("this state after fetch", this.state) }))
@@ -41,10 +48,9 @@ export default class AllCoinsContainer extends Component {
                          <div className="flip-card-inner">
                              <div className="flip-card-front">
                                  <div className ="picCard" ><img src={AllCoins.img} ></img></div>
-                                 <h3><div>User ID: {AllCoins.ourId}</div></h3>
-                                 <h3><div>{AllCoins.name}</div></h3>
-                                 <h3> <div>Ticker Symbol: {AllCoins.symbol}</div></h3>
-                                 <h3> <div>CoinMarketCap est USD price: ${AllCoins.quotes.USD.price}</div></h3>
+                                 <h4><div>{AllCoins.name}</div></h4>
+                                 <h4> <div>Ticker Symbol: {AllCoins.symbol}</div></h4>
+                                 <h4> <div>CoinMarketCap est USD price: ${AllCoins.quotes.USD.price}</div></h4>
                                 
                              </div>
                              <div className="flip-card-back">

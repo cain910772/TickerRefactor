@@ -15,7 +15,7 @@ export default Object.create(null,{
   value:function(coinid,userid){
 let userCoin = {"coinId":coinid,"userId":userid}
 InterDb.postVal(userCoin)
-
+alert("Saved to Portfolio")
   }
  },
 
@@ -26,6 +26,7 @@ InterDb.postVal(userCoin)
     .then(coins=>{coins.forEach(coin => {
       if(coin.coinId === id){
         InterDb.deleteCoin(coin.id)
+        alert("Removed from portfolio")
         window.location.reload(); 
     }
   },

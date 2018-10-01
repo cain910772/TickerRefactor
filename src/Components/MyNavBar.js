@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem,} from "react-bootstrap"
+import { Navbar, Nav, NavItem,Button} from "react-bootstrap"
 import LogOut from"../LogOut"
 import "./myNavBar.css"
 
@@ -8,7 +8,7 @@ import "./myNavBar.css"
 class MyNavBar extends Component {
     render() {
        return (
-     
+     <center>
         <Navbar className ="mynavbar" >
         <Navbar.Header>
           <Navbar.Brand>
@@ -31,9 +31,11 @@ class MyNavBar extends Component {
           <NavItem eventKey={5} href="/MyExchanges">
             Exchanges
           </NavItem>
+         <LogOut/>
+        
             </Nav>
              </Navbar>
-           
+             </center>
          
        )
            

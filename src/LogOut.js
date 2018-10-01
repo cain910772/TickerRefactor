@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Navbar, Nav, NavItem,Button} from "react-bootstrap"
 
 
 
@@ -15,9 +15,9 @@ export default class Logout extends Component {
     }
     render() {
         return(
-            <div>
-                <button className ="logoutBtn" onClick={this.logout}>Logout</button>
-            </div>
+          
+                <NavItem onClick={this.logout}>Logout</NavItem>
+            
         )
     }
 }
